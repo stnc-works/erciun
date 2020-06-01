@@ -14,9 +14,7 @@ const gulp                      = require('gulp'),
       concat                    = require('gulp-concat'),
       imagemin                  = require('gulp-imagemin'),
       browserSync               = require('browser-sync').create(),
-
       dependents                = require('gulp-dependents'),
-
       src_folder                = './src/',
       src_assets_folder         = src_folder + 'assets/',
       dist_folder               = './dist/',
@@ -42,9 +40,6 @@ gulp.task('html', () => {
 
 
 gulp.task('js', () => {
- // return gulp.src([ src_assets_folder + 'js/**/*.js' ], { since: gulp.lastRun('js') })
-
-
   return gulp.src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/bootstrap/dist/js/bootstrap.js',

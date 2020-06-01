@@ -2,7 +2,7 @@ bunun countrer olayını bize ekle
 https://www.adu.edu.tr/
 https://www.antalya.edu.tr/tr  bunun hızlı erişimi ? ve duyurular 
 https://uskudar.edu.tr/  duyurular flex menu ustdeki 
-
+https://www.turkiye.gov.tr/  anasayfadaki linkler çok güzel 
 
 https://codepen.io/seyedi/pen/vBlCe
 https://codepen.io/pixelsultan/pen/WrWZpd
@@ -44,3 +44,5 @@ jquery-nicescroll
 
 
 
+css maps
+https://www.thesoapfactory.com/wp-content/themes/wowtheme/assets/css/CHfw-tools.css?ver=3.1.190
