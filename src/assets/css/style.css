@@ -1,45 +1,61 @@
-/* Table of Contents
+/* DOCUMENT INFORMATION
+	- Document: erciyes üni homepage 
+	- Version:  1.0.0
+	- Client:   2015 - 2020 © ERÜ Web İçerik Yönetim Sistemi
+	- Author:   selman tunç  
+*/
+
+
+/* Table of Contents [  CSS MAPS  ]
 /*** CONTENTS ***/
 /*****************************************************************
 01. #Reset
 02. #Typography
-03. #Wordpress Editor Styles & Contact Form 7 Reset.
-04. #Skins styles
-05. #General
-06. #Header
-07. #Widgets (Sidebar)
-08. #Blog General (single page,page,all blog list posts)
-09. #Blog: Small List
-10. #Blog: Masonry
-11. #Blog: Timeline + Zigzag
-12. #Blog: Zigzag + ZigzagTwo
-13. #Page
-14. #Search results
-15. #Page not found
-16. #Single Post
-17. #Comments
-18. #Pagination
-19. #scrollbar - scroller - booked override
-20. #Doctor Info Page
-21. #Doctor Archive Page
-22. #Doctor single team page
-23. #Event Page
-24. #DEPARTMANS PAGE
-25. #Single Location PAGE
-26. #Locations Archive Page
-27. #Doctor Find Page
-28. #Footer
-*****************************************************************/
+03. #General
+04. #Wrapper
+05. #Header
+    05-01. #header logo 
 
-/* DOCUMENT INFORMATION
-	- Document: Jukebox Theme
-	- Version:  1.2.3
-	- Client:   Fonzi Winkler
-	- Author:   M. Gibbonz   
-*/
+*****************************************************************/
 
 /* ==========================================================================
                                      01. #Reset
+   ========================================================================== */
+
+/* ==========================================================================
+                                    03. #General
+   ========================================================================== */
+   .noPadding{
+	   padding: 0!important;
+   }
+
+/* ==========================================================================
+                                     04. #Header
+   ========================================================================== */
+
+   #wrapper.boxed {
+    width: 1230px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
+    /* box-shadow: 0 0 25px rgba(60, 60, 60, 0.95); */
+}
+
+
+/* ==========================================================================
+                                     05. #Header
+   ========================================================================== */
+
+   .header-container {
+    margin: 0!important;
+    padding:  0!important;
+
+}
+
+/* ==========================================================================
+                                     05-01. #Header 
    ========================================================================== */
 
 
