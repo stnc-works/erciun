@@ -4,8 +4,8 @@
   <head>
 
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1,
-      shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -25,31 +25,96 @@
   <body>
 
     <!-- *** wrapper homepage MAIN *** -->
-    <div id="wrapper" class="toggled1 boxed">
+    <div id="wrapper" class="toggled1 boxed container">
 
       <!-- *** Header *** -->
-      <header class="header-container">
+      <header class="header-container row">
 
-        <nav id="this-top-nav-menu" class="nav top-nav">
+        <!-- *** header Logo *** -->
+        <div id="homepage-logo" class="col-lg-2 col-md-2 col-sm-2 col-xs-12
+          noPadding">
+          <a class="hidden-xs hidden-sm" href="/">
+            <img src="/assets/images/ErciyesUniversiteLogo.png" alt="">
+          </a>
+        </div>
+        <!-- *** end header Logo [id:homepage-logo] *** -->
 
-          <!-- *** header Logo *** -->
-          <div id="homepage-logo" class="col-lg-2 col-md-2 col-sm-2 col-xs-12 noPadding">
-            <a class="hidden-xs hidden-sm" href="/">
-              <img src="/assets/images/ErciyesUniversiteLogo.png" alt="">
-            </a>
+
+
+
+        <!-- *** Header small Menu *** -->
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-12 hidden-xs hidden-sm"
+          id="header-smallMenu-container">
+
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <nav id="this-top-nav-menu" class="nav top-nav HeadersmallMenu">
+              <ul>
+                <li><a href="#">Aday Öğrenci</a></li>
+                <li><a href="#">Mevcut Öğrenci</a></li>
+                <li><a href="#">Mezunlar</a></li>
+                <li><a href="#">İletişim</a></li>
+                <li class="English"><a href="http://en.erciyes.edu.tr/"
+                    target="_blanck" title="Erciyes University English Web
+                    Page">English</a></li>
+              </ul>
+            </nav>
+            <!-- *** end Header [this-top-nav-menu] *** -->
           </div>
-          <!-- *** end header Logo [id:homepage-logo] *** -->
 
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
-
+          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <nav class="nav">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li class="nav-submenu"><a href="#">Services</a>
+                  <ul>
+                    <li><a href="#">Some Service</a></li>
+                    <li><a href="#">Another Service</a></li>
+                    <li><a href="#">Good Service</a></li>
+                    <li><a href="#">Room Service</a></li>
+                  </ul>
+                </li>
+                <li class="nav-submenu"><a href="#">Products</a>
+                  <ul>
+                    <li><a href="#">Food</a></li>
+                    <li class="nav-submenu"><a href="#">Drinks</a>
+                      <ul>
+                        <li><a href="#">Water</a></li>
+                        <li class="nav-submenu"><a href="#">Cola</a>
+                          <ul>
+                            <li class="nav-submenu nav-left"><a href="#">Coca
+                                Cola</a>
+                              <ul>
+                                <li><a href="#">This one goes left!</a></li>
+                                <li><a href="#">Too much sugar...</a></li>
+                                <li><a href="#">Yummy</a></li>
+                              </ul>
+                            </li>
+                            <li><a href="#">Pepsi</a></li>
+                            <li><a href="#">River</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="#">Lemonade</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Candy</a></li>
+                    <li><a href="#">Ice Cream</a></li>
+                  </ul>
+                </li>
+                <li class="nav-submenu"><a href="#">Albums</a>
+                  <ul>
+                    <li><a href="#">Christmas</a></li>
+                    <li><a href="#">New Year</a></li>
+                    <li><a href="#">Easter</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+              </ul>
+            </nav>
           </div>
 
-
-        </nav>
-        <!-- *** end Header [this-top-nav-menu] *** -->
-
-
-
+        </div>
+        <!-- *** end Header small Menu [id:header-smallMenu-container] *** -->
       </header>
       <!-- *** end Header *** -->
 
@@ -57,9 +122,10 @@
     <!-- *** end wrapper  [id:wrapper]*** -->
 
     <!-- *** [ Bootstrap core & jquery JS (min) ] *** -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300"
+      rel="stylesheet">
 
-   
+
     <!-- 
       <script async src="/assets/js/jquery.js"></script>
       <script async src="/assets/js/jquery.magnific-popup.js"></script>
@@ -68,8 +134,20 @@
       <script async src="/assets/js/jquery.slick.js"></script>
       <script async src="/assets/js/jquery.unveil.js"></script> 
     -->
-
+  
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
     <script async src="/assets/js/app.min.js"></script>
+    <script>
+      $( document ).ready(function() {
+ 
+        $( "a" ).click(function( event ) {
+     
+            alert( "Thanks for visiting!" );
+     
+        });
+     
+    });
+  </script>
   </body>
 
 </html>
