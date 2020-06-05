@@ -27,9 +27,273 @@
 /* ==========================================================================
                                     03. #General
    ========================================================================== */
+   .no-padding,
    .noPadding{
 	   padding: 0!important;
    }
+
+   .no-margin,
+   .noMargin{
+	   margin: 0!important;
+   }
+   .no-pad-margin{
+    margin: 0!important;
+    padding: 0!important;
+   }
+   .margin-left-5 {
+    margin-left: 5px !important;
+}
+
+.margin-left-10 {
+    margin-left: 10px !important;
+}
+
+.margin-left-15 {
+    margin-left: 15px !important;
+}
+
+.margin-left-20 {
+    margin-left: 20px !important;
+}
+
+.margin-right-5 {
+    margin-right: 5px !important;
+}
+
+.margin-right-10 {
+    margin-right: 10px !important;
+}
+
+.margin-right-15 {
+    margin-right: 15px !important;
+}
+
+.margin-right-20 {
+    margin-right: 20px !important;
+}
+
+.margin-top10 {
+    margin-top: 10px !important;
+}
+
+.margin-top20 {
+    margin-top: 20px !important;
+}
+
+.margin-top25 {
+    margin-top: 25px !important;
+}
+
+.margin-top30 {
+    margin-top: 30px !important;
+}
+
+.margin-top35 {
+    margin-top: 35px !important;
+}
+
+.margin-top40 {
+    margin-top: 40px !important;
+}
+
+.padding-right-5 {
+    padding-right: 5px !important;
+}
+
+.padding-right-10 {
+    padding-right: 10px !important;
+}
+
+.padding-right-15 {
+    padding-right: 15px !important;
+}
+
+.padding-right-20 {
+    padding-right: 20px !important;
+}
+
+.padding-left-5 {
+    padding-left: 5px !important;
+}
+
+.padding-left-10 {
+    padding-left: 10px !important;
+}
+
+.padding-left-15 {
+    padding-left: 15px !important;
+}
+
+.padding-left-20 {
+    padding-left: 20px !important;
+}
+
+.text-aling-center {
+    text-align: center !important;
+}
+
+.text-aling-left {
+    text-align: left !important;
+}
+
+.text-aling-right {
+    text-align: right !important;
+}
+
+.bold,
+.font-bold {
+    font-weight: 700 !important;
+}
+
+.font-size5 {
+    font-size: 5px !important;
+}
+
+.font-size6 {
+    font-size: 6px !important;
+}
+
+.font-size7 {
+    font-size: 7px !important;
+}
+
+.font-size8 {
+    font-size: 8px !important;
+}
+
+.font-size9 {
+    font-size: 9px !important;
+}
+
+.font-size10 {
+    font-size: 10px !important;
+}
+
+.font-size11 {
+    font-size: 11px !important;
+}
+
+.font-size12 {
+    font-size: 12px !important;
+}
+
+.font-size13 {
+    font-size: 13px !important;
+}
+
+.font-size14 {
+    font-size: 14px !important;
+}
+
+.font-size15 {
+    font-size: 15px !important;
+}
+
+.font-size16 {
+    font-size: 16px !important;
+}
+
+.font-size17 {
+    font-size: 17px !important;
+}
+
+.font-size18 {
+    font-size: 18px !important;
+}
+
+.font-size19 {
+    font-size: 19px !important;
+}
+
+.font-size20 {
+    font-size: 20px !important;
+}
+
+.font-size21 {
+    font-size: 21px !important;
+}
+
+.font-size22 {
+    font-size: 22px !important;
+}
+
+.font-size23 {
+    font-size: 23px !important;
+}
+
+.font-size24 {
+    font-size: 24px !important;
+}
+
+.font-size25 {
+    font-size: 25px !important;
+}
+
+.font-size26 {
+    font-size: 26px !important;
+}
+
+.font-size27 {
+    font-size: 27px !important;
+}
+
+.font-size28 {
+    font-size: 28px !important;
+}
+
+.font-size29 {
+    font-size: 29px !important;
+}
+
+.font-size30 {
+    font-size: 30px !important;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.font-bold h1 {
+    font-weight: bold;
+}
+
+.font-bold h2 {
+    font-weight: bold;
+}
+
+.font-bold h3 {
+    font-weight: bold;
+}
+
+.font-bold h4 {
+    font-weight: bold;
+}
+
+.font-size36 {
+    font-size: 36px !important;
+}
+
+.left {
+    float: left !important;
+}
+
+.right {
+    float: right !important;
+}
+
+
+
+.border-radius-none {
+    border-radius: 0 !important;
+}
+
+.display-none {
+    display: none !important;
+}
+
+.fullwidth-element {
+    width: 100%;
+}
 
 /* ==========================================================================
                                      04. #Header
@@ -110,7 +374,18 @@
 
 /* ----------------------#List elementts ---------------------------- */
 /* ----------------------#Button ---------------------------- */
+
+
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+
+#cssmenu {
+    font-family: Montserrat, sans-serif;
+   
+  }
+
+  
+
 #cssmenu,
 #cssmenu ul,
 #cssmenu ul li,
@@ -126,6 +401,12 @@
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+
+    color: #ffffff;
+    text-decoration: none;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
 }
 #cssmenu:after,
 #cssmenu > ul:after {
@@ -139,10 +420,7 @@
 #cssmenu #menu-button {
   display: none;
 }
-#cssmenu {
-  font-family: Montserrat, sans-serif;
-  background: #333333;
-}
+
 #cssmenu > ul > li {
   float: left;
 }
@@ -165,13 +443,30 @@
   font-size: 12px;
   letter-spacing: 1px;
   text-decoration: none;
-  color: #dddddd;
+
   font-weight: 700;
   text-transform: uppercase;
 }
+
+#cssmenu > ul > li > a {
+
+   color: #ffffff;
+   text-decoration: none;
+   display: block;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 18px;
+  }
+
+
+#cssmenu > ul > li:hover {
+   background-color: #fff;
+
+  }
+
 #cssmenu > ul > li:hover > a {
   color: #ffffff;
 }
+
 #cssmenu > ul > li.has-sub > a {
   padding-right: 30px;
 }
@@ -245,7 +540,7 @@
   text-decoration: none;
   color: #dddddd;
   font-weight: 400;
-  background: #333333;
+  background: #fff;
 }
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {

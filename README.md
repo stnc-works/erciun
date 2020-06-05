@@ -13,7 +13,7 @@ https://codepen.io/VisionLine/pen/xslIu    bu mobil için olabilir
 
 menu bu 
 
-https://codezero-be.github.io/responsive-nav/
+https://www.cssscript.com/demo/pure-css-mobile-compatible-responsive-dropdown-menu/
 
 
 https://tympanus.net/Tutorials/GoogleNexusWebsiteMenu/
