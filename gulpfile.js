@@ -7,7 +7,6 @@ const gulp = require('gulp'),
   del = require('del'),
   sourcemaps = require('gulp-sourcemaps'),
   plumber = require('gulp-plumber'),
-
   minifyCss = require('gulp-clean-css'),
   babel = require('gulp-babel'),
   webpack = require('webpack-stream'),
@@ -43,7 +42,7 @@ gulp.task('html', () => {
 
 gulp.task('js', () => {
   return gulp.src([
-    'bower_components/jquery/dist/jquery.js', // if you need jquery, use "npm i -g bower" and "bower install jquery"
+    // 'bower_components/jquery/dist/jquery.js', // if you need jquery, use "npm i -g bower" and "bower install jquery"
     'bower_components/bootstrap/dist/js/bootstrap.js', // if you need bootstrap, use "npm i -g bower" and "bower install bootstrap"
     src_assets_folder + 'js/**/*.js'
   ]
@@ -77,6 +76,7 @@ gulp.task('minify-css', () => {
   // Folder with files to minify
   return gulp.src([
     // 'node_modules/bootstrap/dist/css/bootstrap.css',
+    'bower_components/bootstrap/dist/css/bootstrap.css', // example with installed bootstrap package
     src_assets_folder + 'css/**/*.css'
   ])
 
