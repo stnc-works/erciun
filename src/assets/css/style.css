@@ -408,6 +408,14 @@
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
+
+#cssmenu ul li ul {
+    background-color: #fff;
+ 
+    padding: 11px 15px; 
+    /* border-bottom: 1px solid rgba(150, 150, 150, 0.15); */
+}
+
 #cssmenu:after,
 #cssmenu > ul:after {
   content: ".";
@@ -463,8 +471,13 @@
 
   }
 
+
+  #cssmenu ul ul li a,
+  #cssmenu ul ul li:hover > a,
+  #cssmenu ul ul li a:hover ,
+  #cssmenu ul ul li.active > a ,
 #cssmenu > ul > li:hover > a {
-  color: #ffffff;
+  color: #153e72;
 }
 
 #cssmenu > ul > li.has-sub > a {
@@ -533,23 +546,30 @@
   margin-right: 100%;
 }
 #cssmenu ul ul li a {
-  border-bottom: 1px solid rgba(150, 150, 150, 0.15);
-  padding: 11px 15px;
-  width: 170px;
-  font-size: 12px;
+
+
+  padding: 10px 0;
+  padding-left: 3px;
+  width: 255px;
+  font-size: 14px;
   text-decoration: none;
-  color: #dddddd;
+
   font-weight: 400;
-  background: #fff;
+
+}
+#cssmenu ul ul li{
+    padding: 5px 0px;
+    border-bottom: 1px solid rgba(92, 133, 178, 0.5);
+}
+#cssmenu ul ul > li:last-child{
+    border-bottom: 0px;
+    margin-bottom: 10px;
 }
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {
   border-bottom: 0;
 }
-#cssmenu ul ul li:hover > a,
-#cssmenu ul ul li a:hover {
-  color: #ffffff;
-}
+
 #cssmenu ul ul li.has-sub > a:after {
   position: absolute;
   top: 16px;
@@ -624,10 +644,8 @@
     color: #dddddd;
     background: none;
   }
-  #cssmenu ul ul li:hover > a,
-  #cssmenu ul ul li.active > a {
-    color: #ffffff;
-  }
+
+
   #cssmenu ul ul,
   #cssmenu ul ul ul,
   #cssmenu.align-right ul ul {
