@@ -607,6 +607,7 @@
   top: 17px;
   height: 0;
 }
+
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
@@ -670,6 +671,7 @@
     text-transform: uppercase;
     font-weight: 700;
   }
+
   #cssmenu #menu-button:after {
     position: absolute;
     top: 22px;
@@ -731,6 +733,7 @@
     height: 34px;
     width: 34px;
   }
+
   #cssmenu .submenu-button:after {
     position: absolute;
     top: 22px;

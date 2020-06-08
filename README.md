@@ -1,3 +1,7 @@
+❯ bower install components-font-awesome --save
+
+https://gist.github.com/edouard-lopez/e99b70af8d4b4463b797
+
 bunun countrer olayını bize ekle 
 https://www.adu.edu.tr/
 https://www.antalya.edu.tr/tr  bunun hızlı erişimi ? ve duyurular 

@@ -69,6 +69,12 @@ gulp.task('js', () => {
 });
 
 
+// Fonts
+gulp.task('fonts', function() {
+  return gulp.src([
+                  'bower_components/components-font-awesome/webfonts/*'])
+          .pipe(gulp.dest(dist_assets_folder +'webfonts'));
+});
 
 
 //https://github.com/ViniciusGularte/MinifiedCssGulp/blob/master/Gulpfile.js
@@ -76,7 +82,8 @@ gulp.task('minify-css', () => {
   // Folder with files to minify
   return gulp.src([
     // 'node_modules/bootstrap/dist/css/bootstrap.css',
-    'bower_components/bootstrap/dist/css/bootstrap.css', // example with installed bootstrap package
+    'bower_components/bootstrap/dist/css/bootstrap.css', //bower bootstrap package
+    'bower_components/components-font-awesome/css/all.css', //font-awesome
     src_assets_folder + 'css/**/*.css'
   ])
 
@@ -115,7 +122,7 @@ gulp.task('vendor', () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clear', 'html', 'js', 'minify-css', 'images', 'vendor'));
+gulp.task('build', gulp.series('clear', 'html', 'js', 'minify-css', 'images', 'vendor', 'fonts'));
 
 gulp.task('dev', gulp.series('html', 'minify-css', 'js'));
 
