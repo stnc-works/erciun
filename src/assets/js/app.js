@@ -83,6 +83,71 @@
      format: "multitoggle"
   });
   
+
+  $('.responsive').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+  });
+
+
+
+
+
   });
   })(jQuery);
-  
+
+
+  var title = document.getElementsByTagName('title');
+
+var msg1 = "Domain.com";
+var msg2 = "New Message - Domain.com"
+var current;
+var titleChange;
+
+function changeTitle(){
+  if(current == msg1){
+   title = msg2;
+   current = msg2;
+  }else{ //If the current title isn't equal to the value of msg1
+   title = msg1;
+   current = msg1;
+  }
+ titleChange = setTimeout("changeTitle()", 1000);
+}
+
+function stopChangingTitle(){
+ clearTimeout(titleChange);
+ title = msg1;
+}
+stopChangingTitle()

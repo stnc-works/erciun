@@ -70,9 +70,9 @@ gulp.task('js', () => {
 
 
 // Fonts
-gulp.task('fonts', function() {
+gulp.task('font-awesome', function() {
   return gulp.src([
-                  'bower_components/components-font-awesome/webfonts/*'])
+                  'bower_components/components-font-awesome/webfonts/*',])
           .pipe(gulp.dest(dist_assets_folder +'webfonts'));
 });
 
@@ -83,12 +83,13 @@ gulp.task('minify-css', () => {
   return gulp.src([
     // 'node_modules/bootstrap/dist/css/bootstrap.css',
     'bower_components/bootstrap/dist/css/bootstrap.css', //bower bootstrap package
-    'bower_components/components-font-awesome/css/all.css', //font-awesome
+    'bower_components/components-font-awesome/css/solid.css', //font-awesome
+    'bower_components/components-font-awesome/css/fontawesome.css', //font-awesome
     src_assets_folder + 'css/**/*.css'
   ])
 
   .pipe(concat('style.css'))
-     .pipe(minifyCss({keepBreaks:false})) // minifying file
+  //   .pipe(minifyCss({keepBreaks:false})) // minifying file
      .pipe(rename({suffix: '.min'})) // renaming file to myproject.min.css
 
 
@@ -104,6 +105,14 @@ gulp.task('images', () => {
     .pipe(gulp.dest(dist_assets_folder + 'images'))
     .pipe(browserSync.stream());
 });
+
+// Fonts
+gulp.task('fonts', function() {
+  return gulp.src([
+          src_assets_folder+'fonts/*',])
+          .pipe(gulp.dest(dist_assets_folder +'fonts'));
+});
+
 
 
 gulp.task('vendor', () => {
@@ -122,7 +131,7 @@ gulp.task('vendor', () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clear', 'html', 'js', 'minify-css', 'images', 'vendor', 'fonts'));
+gulp.task('build', gulp.series('clear', 'html', 'js', 'minify-css', 'images', 'vendor', 'font-awesome','fonts'));
 
 gulp.task('dev', gulp.series('html', 'minify-css', 'js'));
 

@@ -301,10 +301,10 @@
 
    #wrapper.boxed {
     /* width: 1230px; */
-    overflow: hidden;
+    /* overflow: hidden; */
     margin: 0 auto;
     padding: 0;
-    background: #fff;
+    background:white;
     box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
     /* box-shadow: 0 0 25px rgba(60, 60, 60, 0.95); */
 }
@@ -376,11 +376,11 @@
 /* ----------------------#Button ---------------------------- */
 
 
-@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
 
 
 #cssmenu {
-    font-family: Montserrat, sans-serif;
+    font-family: PT Sans, sans-serif;
    
   }
 
@@ -398,6 +398,7 @@
   line-height: 1;
   display: block;
   position: relative;
+  z-index: 999999;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -405,7 +406,7 @@
     color: #ffffff;
     text-decoration: none;
     display: block;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-size: 18px;
 }
 
@@ -448,22 +449,19 @@
 }
 #cssmenu > ul > li > a {
   padding: 17px;
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-decoration: none;
 
-  font-weight: 700;
-  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  font-weight: 400;   
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+
 }
 
-#cssmenu > ul > li > a {
 
-   color: #ffffff;
-   text-decoration: none;
-   display: block;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 18px;
-  }
 
 
 #cssmenu > ul > li:hover {
@@ -490,28 +488,38 @@
   width: 8px;
   height: 2px;
   display: block;
-  background: #dddddd;
-  content: '';
+
+
+  
+  /* font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  content: "\f102"; */
 }
+
+
 #cssmenu > ul > li.has-sub > a:before {
   position: absolute;
-  top: 19px;
+  top: 20px;
   right: 14px;
   display: block;
-  width: 2px;
+  width: 9px;
   height: 8px;
-  background: #dddddd;
-  content: '';
   -webkit-transition: all .25s ease;
   -moz-transition: all .25s ease;
   -ms-transition: all .25s ease;
   -o-transition: all .25s ease;
   transition: all .25s ease;
+  font-family: 'Font Awesome 5 Free';
+  content: "\f103";
+  font-size: 14px;
+  font-weight: 700;
 }
+
 #cssmenu > ul > li.has-sub:hover > a:before {
   top: 23px;
   height: 0;
 }
+
 #cssmenu ul ul {
   position: absolute;
   left: -9999px;
@@ -529,6 +537,7 @@
 }
 #cssmenu li:hover > ul {
   left: auto;
+  box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
 }
 #cssmenu.align-right li:hover > ul {
   left: auto;
@@ -545,6 +554,7 @@
   margin-left: 0;
   margin-right: 100%;
 }
+
 #cssmenu ul ul li a {
 
 
@@ -558,7 +568,7 @@
 
 }
 #cssmenu ul ul li{
-    padding: 5px 0px;
+  
     border-bottom: 1px solid rgba(92, 133, 178, 0.5);
 }
 #cssmenu ul ul > li:last-child{
@@ -611,22 +621,52 @@
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;
+    background-color: #1a3659;
+  
   }
   #cssmenu ul {
     width: 100%;
     display: none;
   }
+
+  #cssmenu ul ul li a,
+  #cssmenu ul ul li:hover > a,
+  #cssmenu ul ul li a:hover ,
+  #cssmenu ul ul li.active > a ,
+#cssmenu > ul > li:hover > a {
+  color: #fff;
+}
+
+#cssmenu > ul > li > a {
+  padding: 10px;
+  font-size: 14px;
+}
   #cssmenu.align-center > ul {
     text-align: left;
   }
   #cssmenu ul li {
     width: 100%;
-    border-top: 1px solid rgba(120, 120, 120, 0.2);
   }
+
+  #cssmenu ul ul li{
+  
+    border-bottom:  1px solid rgba(120, 120, 120, 0.2);
+  }
+
+
   #cssmenu ul ul li,
   #cssmenu li:hover > ul > li {
     height: auto;
   }
+
+  #cssmenu > ul > li:hover {
+
+    background-color: #153e72;
+   }
+   #cssmenu ul li ul {
+    background-color: #153e72;
+}
+   
   #cssmenu ul li a,
   #cssmenu ul ul li a {
     width: 100%;
@@ -634,9 +674,11 @@
   }
   #cssmenu > ul > li {
     float: none;
+    border-right: 1px solid transparent !important;
+    border-bottom: 1px solid #002147 !important;
   }
   #cssmenu ul ul li a {
-    padding-left: 25px;
+    padding-left: 0;
   }
   #cssmenu ul ul ul li a {
     padding-left: 35px;
@@ -717,7 +759,7 @@
   }
   #cssmenu .submenu-button {
     position: absolute;
-    z-index: 99;
+    z-index: 99999;
     right: 0;
     top: 0;
     display: block;
@@ -727,7 +769,7 @@
     cursor: pointer;
   }
   #cssmenu .submenu-button.submenu-opened {
-    background: #262626;
+    background:transparent;
   }
   #cssmenu ul ul .submenu-button {
     height: 34px;
@@ -769,3 +811,277 @@
     display: none;
   }
 }
+
+
+.slick-slide-items {
+  width: 100%;
+  margin: 0px auto;
+
+}
+
+
+
+.slick-slide img {
+  width: 100%;
+  border: 0px solid #fff
+}
+
+.slick-next,
+.slick-prev {
+
+  position: absolute;
+  z-index: 9;
+}
+
+.slick-prev {
+  left: 20px;
+}
+.slick-next {
+  right: 20px;
+}
+
+.slick-dots {
+
+  bottom: 25px;}
+
+  .slick-dotted.slick-slider {
+    margin: 0!important;
+}
+.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus,
+  .slick-prev, .slick-next{
+    /* width: 100%; */
+    /* height: 100%; */
+    background: #000;
+    /* position: absolute; */
+    width: 50px;
+    height: 50px;
+    /* top: 0; */
+    /* left: 0; */
+    /* z-index: -1; */
+    opacity: 0.75;
+
+}
+
+
+.SliderAciklama {
+  position: absolute;
+  margin: 0 0 0 55px;
+  top: 70%;
+  padding: 10px;
+  color: #fff;
+  z-index: 9999999;
+  font-size: 12px;
+}
+
+
+  .SliderAciklama div span {
+      margin: 10px 0px 10px 0px;
+      padding: 10px 9px 10px 25px;
+  }
+
+      .SliderAciklama div span > a {
+          display: inline-block;
+          width: 100px;
+          padding: 10px 10px 10px 10px;
+          margin-left: 30px;
+          margin-right: -10px;
+          background-color: #ffc742;
+          position: relative;
+          text-decoration: none;
+          color: #fff;
+          text-align: center;
+      }
+
+
+          .SliderAciklama div span > a:hover {
+              color: #000;
+          }
+
+
+
+          .SliderAciklama div span > a:after {
+              content: '';
+              position: absolute;
+              top: 0px;
+              left: 100px;
+              width: 0;
+              height: 0;
+              border: 22px solid transparent;
+              border-left: 12px solid #ffc742;
+          }
+
+
+          .SliderAciklama div span > a:before {
+              content: '';
+              position: absolute;
+              top: 0px;
+              left: 101px;
+              width: 0;
+              height: 0;
+              border: 22px solid transparent;
+              border-left: 12px solid #ffc742;
+          }
+
+
+  .SliderAciklama div:nth-child(1) span {
+      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+      font-size: 18px;
+      background-color: rgba(0, 0, 0, 0.5);
+
+  }
+
+  .SliderAciklama div:nth-child(2) {
+      padding: 10px 15px;
+      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+      font-size: 18px;
+      margin-top: 3px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #000;
+      text-align: center;
+  }
+
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .SliderAciklama {
+      position: absolute;
+      margin: 0 5px;
+      top: 30%;
+      padding: 5px;
+      color: #fff;
+      z-index: 99;
+      font-size: 12px;
+  }
+
+  
+  .SliderAciklama div span {
+      margin: 10px 0px 10px 0px;
+      padding: 5px 5px;
+  }
+
+  
+      .SliderAciklama div span > a {
+          display: inline-block;
+          width: 80px;
+          padding: 5px 10px 5px 10px;
+          margin-left: 30px;
+          margin-right: -10px;
+          background-color: #8b0000;
+          position: relative;
+          text-decoration: none;
+          color: #fff;
+          text-align: center;
+      }
+
+          .SliderAciklama div span > a:after {
+              content: '';
+              position: absolute;
+              top: 0px;
+              left: 80px;
+              width: 0;
+              height: 0;
+              border: 16px solid transparent;
+              border-left: 12px solid #8b0000;
+          }
+
+          .SliderAciklama div span > a:before {
+              content: '';
+              position: absolute;
+              top: 0px;
+              left: 80px;
+              width: 0;
+              height: 0;
+              border: 15px solid transparent;
+              border-left: 12px solid #640101;
+          }
+
+  .SliderAciklama div:nth-child(1) span {
+      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+      font-size: 15px;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .SliderAciklama div:nth-child(2) {
+      padding: 5px 10px;
+      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+      font-size: 15px;
+      margin-top: 5px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #000;
+      text-align: center;
+  }
+}
+
+
+@media (max-width: 766px) {
+  /*slider açıklama*/
+      .SliderAciklama {
+      position: absolute;
+      margin: 0 5px;
+      top: 15%;
+      padding: 5px;
+      color: #fff;
+      z-index: 9999999;
+      font-size: 12px;
+  }
+
+  
+  .SliderAciklama div span {
+      margin: 10px 0px 10px 0px;
+      padding: 5px 5px;
+  }
+
+  
+      .SliderAciklama div span > a {
+          display: inline-block;
+          width: 80px;
+          padding: 5px 10px 5px 10px;
+          margin-left: 30px;
+          margin-right: -10px;
+          background-color: #8b0000;
+          position: relative;
+          text-decoration: none;
+          color: #fff;
+          text-align: center;
+      }
+
+          .SliderAciklama div span > a:after {
+              content: '';
+              position: absolute;
+              top: 0px;
+              left: 80px;
+              width: 0;
+              height: 0;
+              border: 14px solid transparent;
+              border-left: 12px solid #8b0000;
+          }
+
+          .SliderAciklama div span > a:before {
+              content: '';
+              position: absolute;
+              top: 0px;
+              left: 80px;
+              width: 0;
+              height: 0;
+              border: 13px solid transparent;
+              border-left: 12px solid #640101;
+          }
+
+  .SliderAciklama div:nth-child(1) span {
+      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+      font-size: 11px;
+      background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .SliderAciklama div:nth-child(2) {
+      padding: 5px 10px;
+      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+      font-size: 11px;
+      margin-top: 5px;
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #000;
+      text-align: center;
+  }
+}
+
+
