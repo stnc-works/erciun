@@ -8,1080 +8,1068 @@
 
 /* Table of Contents [  CSS MAPS  ]
 /*** CONTENTS ***/
+
+
 /*****************************************************************
 01. #Reset
 02. #Typography
 03. #General
 04. #Wrapper
 05. #Header
-  05-0.00 #Header Small Menu 
-    05-0.01 #Header Small Menu 
-  05-1.00 #header logo 
-
+  05-1.00 #Header Small Menu 
+  05-2.00 #header logo 
+  05-3.00 #header Main Menu 
+06. #Home Slider (jq slick slider)
+  06-1.00 #slick slider OVERRIDE
+  06-2.00 #slide info (tıklama butonu)
 *****************************************************************/
 
 /* ==========================================================================
                                      01. #Reset
    ========================================================================== */
 
+
 /* ==========================================================================
                                     03. #General
    ========================================================================== */
+
    .no-padding,
-   .noPadding{
-	   padding: 0!important;
+   .noPadding {
+     padding: 0!important;
    }
-
+   
    .no-margin,
-   .noMargin{
-	   margin: 0!important;
+   .noMargin {
+     margin: 0!important;
    }
-   .no-pad-margin{
-    margin: 0!important;
-    padding: 0!important;
+   
+   .no-pad-margin {
+     margin: 0!important;
+     padding: 0!important;
    }
+   
    .margin-left-5 {
-    margin-left: 5px !important;
-}
-
-.margin-left-10 {
-    margin-left: 10px !important;
-}
-
-.margin-left-15 {
-    margin-left: 15px !important;
-}
-
-.margin-left-20 {
-    margin-left: 20px !important;
-}
-
-.margin-right-5 {
-    margin-right: 5px !important;
-}
-
-.margin-right-10 {
-    margin-right: 10px !important;
-}
-
-.margin-right-15 {
-    margin-right: 15px !important;
-}
-
-.margin-right-20 {
-    margin-right: 20px !important;
-}
-
-.margin-top10 {
-    margin-top: 10px !important;
-}
-
-.margin-top20 {
-    margin-top: 20px !important;
-}
-
-.margin-top25 {
-    margin-top: 25px !important;
-}
-
-.margin-top30 {
-    margin-top: 30px !important;
-}
-
-.margin-top35 {
-    margin-top: 35px !important;
-}
-
-.margin-top40 {
-    margin-top: 40px !important;
-}
-
-.padding-right-5 {
-    padding-right: 5px !important;
-}
-
-.padding-right-10 {
-    padding-right: 10px !important;
-}
-
-.padding-right-15 {
-    padding-right: 15px !important;
-}
-
-.padding-right-20 {
-    padding-right: 20px !important;
-}
-
-.padding-left-5 {
-    padding-left: 5px !important;
-}
-
-.padding-left-10 {
-    padding-left: 10px !important;
-}
-
-.padding-left-15 {
-    padding-left: 15px !important;
-}
-
-.padding-left-20 {
-    padding-left: 20px !important;
-}
-
-.text-aling-center {
-    text-align: center !important;
-}
-
-.text-aling-left {
-    text-align: left !important;
-}
-
-.text-aling-right {
-    text-align: right !important;
-}
-
-.bold,
-.font-bold {
-    font-weight: 700 !important;
-}
-
-.font-size5 {
-    font-size: 5px !important;
-}
-
-.font-size6 {
-    font-size: 6px !important;
-}
-
-.font-size7 {
-    font-size: 7px !important;
-}
-
-.font-size8 {
-    font-size: 8px !important;
-}
-
-.font-size9 {
-    font-size: 9px !important;
-}
-
-.font-size10 {
-    font-size: 10px !important;
-}
-
-.font-size11 {
-    font-size: 11px !important;
-}
-
-.font-size12 {
-    font-size: 12px !important;
-}
-
-.font-size13 {
-    font-size: 13px !important;
-}
-
-.font-size14 {
-    font-size: 14px !important;
-}
-
-.font-size15 {
-    font-size: 15px !important;
-}
-
-.font-size16 {
-    font-size: 16px !important;
-}
-
-.font-size17 {
-    font-size: 17px !important;
-}
-
-.font-size18 {
-    font-size: 18px !important;
-}
-
-.font-size19 {
-    font-size: 19px !important;
-}
-
-.font-size20 {
-    font-size: 20px !important;
-}
-
-.font-size21 {
-    font-size: 21px !important;
-}
-
-.font-size22 {
-    font-size: 22px !important;
-}
-
-.font-size23 {
-    font-size: 23px !important;
-}
-
-.font-size24 {
-    font-size: 24px !important;
-}
-
-.font-size25 {
-    font-size: 25px !important;
-}
-
-.font-size26 {
-    font-size: 26px !important;
-}
-
-.font-size27 {
-    font-size: 27px !important;
-}
-
-.font-size28 {
-    font-size: 28px !important;
-}
-
-.font-size29 {
-    font-size: 29px !important;
-}
-
-.font-size30 {
-    font-size: 30px !important;
-}
-
-.font-bold {
-    font-weight: bold;
-}
-
-.font-bold h1 {
-    font-weight: bold;
-}
-
-.font-bold h2 {
-    font-weight: bold;
-}
-
-.font-bold h3 {
-    font-weight: bold;
-}
-
-.font-bold h4 {
-    font-weight: bold;
-}
-
-.font-size36 {
-    font-size: 36px !important;
-}
-
-.left {
-    float: left !important;
-}
-
-.right {
-    float: right !important;
-}
-
-
-
-.border-radius-none {
-    border-radius: 0 !important;
-}
-
-.display-none {
-    display: none !important;
-}
-
-.fullwidth-element {
-    width: 100%;
-}
-
-/* ==========================================================================
-                                     04. #Header
-   ========================================================================== */
-
-   #wrapper.boxed {
-    /* width: 1230px; */
-    /* overflow: hidden; */
-    margin: 0 auto;
-    padding: 0;
-    background:white;
-    box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
-    /* box-shadow: 0 0 25px rgba(60, 60, 60, 0.95); */
-}
-
-
-/* ==========================================================================
-                                     05. #Header
-   ========================================================================== */
-
-   .header-container {
-    margin: 0!important;
-    padding:  0!important;
-    background-color: #002147;
-
-}
-
-/* ==========================================================================
-                                     05-0.00 #Header Small Menu 
-   ========================================================================== */
-.HeadersmallMenu{
-    margin: 10px 0 0 0;
-    display: table;
-    float: right;
-}
-.HeadersmallMenu > ul {
-    display: table;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    float: left;
-    background-color: #001733;
-}
-
-.HeadersmallMenu > ul > li {
-    list-style: none;
-    float: left;
-    padding: 5px 10px;
-}
-
-.HeadersmallMenu > ul > li > a {
-    font-size: 11px;
-    color: #ffffff;
-    font-family: "PTSansRegular", sans-serif;
-}
-
-.HeadersmallMenu  ul  li:hover {
-    background-color: #01336f;
-    /* -moz-transition: background 0.6s ease-in-out, border-radius 0.6s ease,color 0.6s linear, height 0.6s;
-    -o-transition: background 0.6s ease-in-out, border-radius 0.6s ease,color 0.6s linear, height 0.6s;
-    -webkit-transition: background 0.6s ease-in-out, border-radius 0.6s ease,color 0.6s linear, height 0.6s; */
-    transition: background 0.6s ease-in-out, border-radius 0.6s ease,color 0.6s linear, height 0.6s;
-}
-
-.HeadersmallMenu > ul > li > a:hover {
-    text-decoration: none;
-}
-
-.HeadersmallMenu > ul > li.English {
-    background-color: #8d0a03;
-}
-/* ==========================================================================
-                                     05-01. #Header 
-   ========================================================================== */
-
-
-
-/* ----------------------#List elementts ---------------------------- */
-/* ----------------------#Button ---------------------------- */
-
-
-
-
-
-#cssmenu {
-    font-family: PT Sans, sans-serif;
-   
-  }
-
-  
-
-#cssmenu,
-#cssmenu ul,
-#cssmenu ul li,
-#cssmenu ul li a,
-#cssmenu #menu-button {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-  line-height: 1;
-  display: block;
-  position: relative;
-  z-index: 999999;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-
-    color: #ffffff;
-    text-decoration: none;
-    display: block;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
-}
-
-#cssmenu ul li ul {
-    background-color: #fff;
- 
-    padding: 11px 15px; 
-    /* border-bottom: 1px solid rgba(150, 150, 150, 0.15); */
-}
-
-#cssmenu:after,
-#cssmenu > ul:after {
-  content: ".";
-  display: block;
-  clear: both;
-  visibility: hidden;
-  line-height: 0;
-  height: 0;
-}
-#cssmenu #menu-button {
-  display: none;
-}
-
-#cssmenu > ul > li {
-  float: left;
-}
-#cssmenu.align-center > ul {
-  font-size: 0;
-  text-align: center;
-}
-#cssmenu.align-center > ul > li {
-  display: inline-block;
-  float: none;
-}
-#cssmenu.align-center ul ul {
-  text-align: left;
-}
-#cssmenu.align-right > ul > li {
-  float: right;
-}
-#cssmenu > ul > li > a {
-  padding: 17px;
-
-  letter-spacing: 1px;
-
-  font-weight: 400;   
-  color: #ffffff;
-  text-decoration: none;
-  display: block;
-  font-family: 'PT Sans', sans-serif;
-  font-size: 18px;
-
-}
-
-
-
-
-#cssmenu > ul > li:hover {
-   background-color: #fff;
-
-  }
-
-
-  #cssmenu ul ul li a,
-  #cssmenu ul ul li:hover > a,
-  #cssmenu ul ul li a:hover ,
-  #cssmenu ul ul li.active > a ,
-#cssmenu > ul > li:hover > a {
-  color: #153e72;
-}
-
-#cssmenu > ul > li.has-sub > a {
-  padding-right: 30px;
-}
-#cssmenu > ul > li.has-sub > a:after {
-  position: absolute;
-  top: 22px;
-  right: 11px;
-  width: 8px;
-  height: 2px;
-  display: block;
-
-
-  
-  /* font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  content: "\f102"; */
-}
-
-
-#cssmenu > ul > li.has-sub > a:before {
-  position: absolute;
-  top: 20px;
-  right: 14px;
-  display: block;
-  width: 9px;
-  height: 8px;
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-  font-family: 'Font Awesome 5 Free';
-  content: "\f103";
-  font-size: 14px;
-  font-weight: 700;
-}
-
-#cssmenu > ul > li.has-sub:hover > a:before {
-  top: 23px;
-  height: 0;
-}
-
-#cssmenu ul ul {
-  position: absolute;
-  left: -9999px;
-}
-#cssmenu.align-right ul ul {
-  text-align: right;
-}
-#cssmenu ul ul li {
-  height: 0;
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-}
-#cssmenu li:hover > ul {
-  left: auto;
-  box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
-}
-#cssmenu.align-right li:hover > ul {
-  left: auto;
-  right: 0;
-}
-#cssmenu li:hover > ul > li {
-  height: 35px;
-}
-#cssmenu ul ul ul {
-  margin-left: 100%;
-  top: 0;
-}
-#cssmenu.align-right ul ul ul {
-  margin-left: 0;
-  margin-right: 100%;
-}
-
-#cssmenu ul ul li a {
-
-
-  padding: 10px 0;
-  padding-left: 3px;
-  width: 255px;
-  font-size: 14px;
-  text-decoration: none;
-
-  font-weight: 400;
-
-}
-#cssmenu ul ul li{
-  
-    border-bottom: 1px solid rgba(92, 133, 178, 0.5);
-}
-#cssmenu ul ul > li:last-child{
-    border-bottom: 0px;
-    margin-bottom: 10px;
-}
-#cssmenu ul ul li:last-child > a,
-#cssmenu ul ul li.last-item > a {
-  border-bottom: 0;
-}
-
-#cssmenu ul ul li.has-sub > a:after {
-  position: absolute;
-  top: 16px;
-  right: 11px;
-  width: 8px;
-  height: 2px;
-  display: block;
-  background: #dddddd;
-  content: '';
-}
-#cssmenu.align-right ul ul li.has-sub > a:after {
-  right: auto;
-  left: 11px;
-}
-#cssmenu ul ul li.has-sub > a:before {
-  position: absolute;
-  top: 13px;
-  right: 14px;
-  display: block;
-  width: 2px;
-  height: 8px;
-  background: #dddddd;
-  content: '';
-  -webkit-transition: all .25s ease;
-  -moz-transition: all .25s ease;
-  -ms-transition: all .25s ease;
-  -o-transition: all .25s ease;
-  transition: all .25s ease;
-}
-#cssmenu.align-right ul ul li.has-sub > a:before {
-  right: auto;
-  left: 14px;
-}
-#cssmenu ul ul > li.has-sub:hover > a:before {
-  top: 17px;
-  height: 0;
-}
-
-@media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
-  #cssmenu {
-    width: 100%;
-    background-color: #1a3659;
-  
-  }
-  #cssmenu ul {
-    width: 100%;
-    display: none;
-  }
-
-  #cssmenu ul ul li a,
-  #cssmenu ul ul li:hover > a,
-  #cssmenu ul ul li a:hover ,
-  #cssmenu ul ul li.active > a ,
-#cssmenu > ul > li:hover > a {
-  color: #fff;
-}
-
-#cssmenu > ul > li > a {
-  padding: 10px;
-  font-size: 14px;
-}
-  #cssmenu.align-center > ul {
-    text-align: left;
-  }
-  #cssmenu ul li {
-    width: 100%;
-  }
-
-  #cssmenu ul ul li{
-  
-    border-bottom:  1px solid rgba(120, 120, 120, 0.2);
-  }
-
-
-  #cssmenu ul ul li,
-  #cssmenu li:hover > ul > li {
-    height: auto;
-  }
-
-  #cssmenu > ul > li:hover {
-
-    background-color: #153e72;
+     margin-left: 5px !important;
    }
-   #cssmenu ul li ul {
-    background-color: #153e72;
-}
    
-  #cssmenu ul li a,
-  #cssmenu ul ul li a {
-    width: 100%;
-    border-bottom: 0;
-  }
-  #cssmenu > ul > li {
-    float: none;
-    border-right: 1px solid transparent !important;
-    border-bottom: 1px solid #002147 !important;
-  }
-  #cssmenu ul ul li a {
-    padding-left: 0;
-  }
-  #cssmenu ul ul ul li a {
-    padding-left: 35px;
-  }
-  #cssmenu ul ul li a {
-    color: #dddddd;
-    background: none;
-  }
+   .margin-left-10 {
+     margin-left: 10px !important;
+   }
+   
+   .margin-left-15 {
+     margin-left: 15px !important;
+   }
+   
+   .margin-left-20 {
+     margin-left: 20px !important;
+   }
+   
+   .margin-right-5 {
+     margin-right: 5px !important;
+   }
+   
+   .margin-right-10 {
+     margin-right: 10px !important;
+   }
+   
+   .margin-right-15 {
+     margin-right: 15px !important;
+   }
+   
+   .margin-right-20 {
+     margin-right: 20px !important;
+   }
+   
+   .margin-top10 {
+     margin-top: 10px !important;
+   }
+   
+   .margin-top20 {
+     margin-top: 20px !important;
+   }
+   
+   .margin-top25 {
+     margin-top: 25px !important;
+   }
+   
+   .margin-top30 {
+     margin-top: 30px !important;
+   }
+   
+   .margin-top35 {
+     margin-top: 35px !important;
+   }
+   
+   .margin-top40 {
+     margin-top: 40px !important;
+   }
+   
+   .padding-right-5 {
+     padding-right: 5px !important;
+   }
+   
+   .padding-right-10 {
+     padding-right: 10px !important;
+   }
+   
+   .padding-right-15 {
+     padding-right: 15px !important;
+   }
+   
+   .padding-right-20 {
+     padding-right: 20px !important;
+   }
+   
+   .padding-left-5 {
+     padding-left: 5px !important;
+   }
+   
+   .padding-left-10 {
+     padding-left: 10px !important;
+   }
+   
+   .padding-left-15 {
+     padding-left: 15px !important;
+   }
+   
+   .padding-left-20 {
+     padding-left: 20px !important;
+   }
+   
+   .text-aling-center {
+     text-align: center !important;
+   }
+   
+   .text-aling-left {
+     text-align: left !important;
+   }
+   
+   .text-aling-right {
+     text-align: right !important;
+   }
+   
+   .bold,
+   .font-bold {
+     font-weight: 700 !important;
+   }
+   
+   .font-size5 {
+     font-size: 5px !important;
+   }
+   
+   .font-size6 {
+     font-size: 6px !important;
+   }
+   
+   .font-size7 {
+     font-size: 7px !important;
+   }
+   
+   .font-size8 {
+     font-size: 8px !important;
+   }
+   
+   .font-size9 {
+     font-size: 9px !important;
+   }
+   
+   .font-size10 {
+     font-size: 10px !important;
+   }
+   
+   .font-size11 {
+     font-size: 11px !important;
+   }
+   
+   .font-size12 {
+     font-size: 12px !important;
+   }
+   
+   .font-size13 {
+     font-size: 13px !important;
+   }
+   
+   .font-size14 {
+     font-size: 14px !important;
+   }
+   
+   .font-size15 {
+     font-size: 15px !important;
+   }
+   
+   .font-size16 {
+     font-size: 16px !important;
+   }
+   
+   .font-size17 {
+     font-size: 17px !important;
+   }
+   
+   .font-size18 {
+     font-size: 18px !important;
+   }
+   
+   .font-size19 {
+     font-size: 19px !important;
+   }
+   
+   .font-size20 {
+     font-size: 20px !important;
+   }
+   
+   .font-size21 {
+     font-size: 21px !important;
+   }
+   
+   .font-size22 {
+     font-size: 22px !important;
+   }
+   
+   .font-size23 {
+     font-size: 23px !important;
+   }
+   
+   .font-size24 {
+     font-size: 24px !important;
+   }
+   
+   .font-size25 {
+     font-size: 25px !important;
+   }
+   
+   .font-size26 {
+     font-size: 26px !important;
+   }
+   
+   .font-size27 {
+     font-size: 27px !important;
+   }
+   
+   .font-size28 {
+     font-size: 28px !important;
+   }
+   
+   .font-size29 {
+     font-size: 29px !important;
+   }
+   
+   .font-size30 {
+     font-size: 30px !important;
+   }
+   
+   .font-bold {
+     font-weight: bold;
+   }
+   
+   .font-bold h1 {
+     font-weight: bold;
+   }
+   
+   .font-bold h2 {
+     font-weight: bold;
+   }
+   
+   .font-bold h3 {
+     font-weight: bold;
+   }
+   
+   .font-bold h4 {
+     font-weight: bold;
+   }
+   
+   .font-size36 {
+     font-size: 36px !important;
+   }
+   
+   .left {
+     float: left !important;
+   }
+   
+   .right {
+     float: right !important;
+   }
+   
+   .border-radius-none {
+     border-radius: 0 !important;
+   }
+   
+   .display-none {
+     display: none !important;
+   }
+   
+   .fullwidth-element {
+     width: 100%;
+   }
+   
+   
+   /* ==========================================================================
+                                        04. #Header
+      ========================================================================== */
+   
+   #wrapper.boxed {
+     /* width: 1230px; */
+     /* overflow: hidden; */
+     margin: 0 auto;
+     padding: 0;
+     background: white;
+     box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
+     /* box-shadow: 0 0 25px rgba(60, 60, 60, 0.95); */
+   }
+   
+   
+   /* ==========================================================================
+                                        05. #Header
+      ========================================================================== */
+   
+   .header-container {
+     margin: 0!important;
+     padding: 0!important;
+     background-color: #002147;
+     max-height: 137px;
+   }
+   
+    /* ---------------------- 05-1.00 #Header Small Menu (header top ) ---------------------------- */
 
+   
+   .HeadersmallMenu {
+     margin: 10px 0 0 0;
+     display: table;
+     float: right;
+   }
+   
+   .HeadersmallMenu>ul {
+     display: table;
+     margin: 0;
+     padding: 0;
+     top: 0;
+     left: 0;
+     float: left;
+     background-color: #001733;
+   }
+   
+   .HeadersmallMenu>ul>li {
+     list-style: none;
+     float: left;
+     padding: 5px 10px;
+   }
+   
+   .HeadersmallMenu>ul>li>a {
+     font-size: 11px;
+     color: #ffffff;
+     font-family: "PTSansRegular", sans-serif;
+   }
+   
+   .HeadersmallMenu ul li:hover {
+     background-color: #01336f;
+     /* -moz-transition: background 0.6s ease-in-out, border-radius 0.6s ease,color 0.6s linear, height 0.6s;
+       -o-transition: background 0.6s ease-in-out, border-radius 0.6s ease,color 0.6s linear, height 0.6s;
+       -webkit-transition: background 0.6s ease-in-out, border-radius 0.6s ease,color 0.6s linear, height 0.6s; */
+     transition: background 0.6s ease-in-out, border-radius 0.6s ease, color 0.6s linear, height 0.6s;
+   }
+   
+   .HeadersmallMenu>ul>li>a:hover {
+     text-decoration: none;
+   }
+   
+   .HeadersmallMenu>ul>li.English {
+     background-color: #8d0a03;
+   }
 
-  #cssmenu ul ul,
-  #cssmenu ul ul ul,
-  #cssmenu.align-right ul ul {
+ /* ---------------------- 05-2.00 #header logo   ---------------------------- */
+   #homepage-logo{
     position: relative;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    text-align: left;
-  }
-  #cssmenu > ul > li.has-sub > a:after,
-  #cssmenu > ul > li.has-sub > a:before,
-  #cssmenu ul ul > li.has-sub > a:after,
-  #cssmenu ul ul > li.has-sub > a:before {
-    display: none;
-  }
-  #cssmenu #menu-button {
-    display: block;
-    padding: 17px;
-    color: #dddddd;
-    cursor: pointer;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
+    z-index: 1;
+   }
 
-  #cssmenu #menu-button:after {
-    position: absolute;
-    top: 22px;
-    right: 17px;
-    display: block;
-    height: 4px;
-    width: 20px;
-    border-top: 2px solid #dddddd;
-    border-bottom: 2px solid #dddddd;
-    content: '';
-  }
-  #cssmenu #menu-button:before {
-    position: absolute;
-    top: 16px;
-    right: 17px;
-    display: block;
-    height: 2px;
-    width: 20px;
-    background: #dddddd;
-    content: '';
-  }
-  #cssmenu #menu-button.menu-opened:after {
-    top: 23px;
-    border: 0;
-    height: 2px;
-    width: 15px;
-    background: #ffffff;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
-  }
-  #cssmenu #menu-button.menu-opened:before {
-    top: 23px;
-    background: #ffffff;
-    width: 15px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    -ms-transform: rotate(-45deg);
-    -o-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-  }
-  #cssmenu .submenu-button {
-    position: absolute;
-    z-index: 99999;
-    right: 0;
-    top: 0;
-    display: block;
-    border-left: 1px solid rgba(120, 120, 120, 0.2);
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-  }
-  #cssmenu .submenu-button.submenu-opened {
-    background:transparent;
-  }
-  #cssmenu ul ul .submenu-button {
-    height: 34px;
-    width: 34px;
-  }
-
-  #cssmenu .submenu-button:after {
-    position: absolute;
-    top: 22px;
-    right: 19px;
-    width: 8px;
-    height: 2px;
-    display: block;
-    background: #dddddd;
-    content: '';
-  }
-  #cssmenu ul ul .submenu-button:after {
-    top: 15px;
-    right: 13px;
-  }
-  #cssmenu .submenu-button.submenu-opened:after {
-    background: #ffffff;
-  }
-  #cssmenu .submenu-button:before {
-    position: absolute;
-    top: 19px;
-    right: 22px;
-    display: block;
-    width: 2px;
-    height: 8px;
-    background: #dddddd;
-    content: '';
-  }
-  #cssmenu ul ul .submenu-button:before {
-    top: 12px;
-    right: 16px;
-  }
-  #cssmenu .submenu-button.submenu-opened:before {
-    display: none;
-  }
-}
-
-
-.slick-slide-items {
-  width: 100%;
-  margin: 0px auto;
-
-}
-
-
-
-.slick-slide img {
-  width: 100%;
-  border: 0px solid #fff
-}
-
-.slick-next,
-.slick-prev {
-
-  position: absolute;
-  z-index: 9;
-}
-
-.slick-prev {
-  left: 20px;
-}
-.slick-next {
-  right: 20px;
-}
-
-.slick-dots {
-
-  bottom: 25px;}
-
-  .slick-dotted.slick-slider {
-    margin: 0!important;
-}
-.slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus,
-  .slick-prev, .slick-next{
-    /* width: 100%; */
-    /* height: 100%; */
-    background: #000;
-    /* position: absolute; */
-    width: 50px;
-    height: 50px;
-    /* top: 0; */
-    /* left: 0; */
-    /* z-index: -1; */
-    opacity: 0.75;
-
-}
-
-
-.SliderAciklama {
-  position: absolute;
-  margin: 0 0 0 55px;
-  top: 70%;
-  padding: 10px;
-  color: #fff;
-  z-index: 9999999;
-  font-size: 12px;
-}
-
-
-  .SliderAciklama div span {
-      margin: 10px 0px 10px 0px;
-      padding: 10px 9px 10px 25px;
-  }
-
-      .SliderAciklama div span > a {
-          display: inline-block;
-          width: 100px;
-          padding: 10px 10px 10px 10px;
-          margin-left: 30px;
-          margin-right: -10px;
-          background-color: #ffc742;
-          position: relative;
-          text-decoration: none;
-          color: #fff;
-          text-align: center;
-      }
-
-
-          .SliderAciklama div span > a:hover {
-              color: #000;
-          }
-
-
-
-          .SliderAciklama div span > a:after {
-              content: '';
-              position: absolute;
-              top: 0px;
-              left: 100px;
-              width: 0;
-              height: 0;
-              border: 22px solid transparent;
-              border-left: 12px solid #ffc742;
-          }
-
-
-          .SliderAciklama div span > a:before {
-              content: '';
-              position: absolute;
-              top: 0px;
-              left: 101px;
-              width: 0;
-              height: 0;
-              border: 22px solid transparent;
-              border-left: 12px solid #ffc742;
-          }
-
-
-  .SliderAciklama div:nth-child(1) span {
-      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
-      font-size: 18px;
-      background-color: rgba(0, 0, 0, 0.5);
-
-  }
-
-  .SliderAciklama div:nth-child(2) {
-      padding: 10px 15px;
-      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
-      font-size: 18px;
-      margin-top: 3px;
-      background-color: rgba(255, 255, 255, 0.7);
-      color: #000;
-      text-align: center;
-  }
-
-
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .SliderAciklama {
-      position: absolute;
-      margin: 0 5px;
-      top: 30%;
-      padding: 5px;
-      color: #fff;
-      z-index: 99;
-      font-size: 12px;
-  }
+ /* ---------------------- 05-3.00 #header Main Menu  ---------------------------- */
 
   
-  .SliderAciklama div span {
-      margin: 10px 0px 10px 0px;
-      padding: 5px 5px;
-  }
+   #cssmenu {
+     font-family: PT Sans, sans-serif;
+   }
+   
+   #cssmenu,
+   #cssmenu ul,
+   #cssmenu ul li,
+   #cssmenu ul li a,
+   #cssmenu #menu-button {
+     margin: 0;
+     padding: 0;
+     border: 0;
+     list-style: none;
+     line-height: 1;
+     display: block;
+     position: relative;
+     z-index: 999999;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+     box-sizing: border-box;
+     color: #ffffff;
+     text-decoration: none;
+     display: block;
+     font-family: 'PT Sans', sans-serif;
+     font-size: 18px;
+   }
+   
+   #cssmenu ul li ul {
+     background-color: #fff;
+     padding: 11px 15px;
+     /* border-bottom: 1px solid rgba(150, 150, 150, 0.15); */
+   }
+   
+   #cssmenu:after,
+   #cssmenu>ul:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+   }
+   
+   #cssmenu #menu-button {
+     display: none;
+   }
+   
+   #cssmenu>ul>li {
+     float: left;
+   }
+   
+   #cssmenu.align-center>ul {
+     font-size: 0;
+     text-align: center;
+   }
+   
+   #cssmenu.align-center>ul>li {
+     display: inline-block;
+     float: none;
+   }
+   
+   #cssmenu.align-center ul ul {
+     text-align: left;
+   }
+   
+   #cssmenu.align-right>ul>li {
+     float: right;
+   }
+   
+   #cssmenu>ul>li>a {
+     padding: 17px;
+     letter-spacing: 1px;
+     font-weight: 400;
+     color: #ffffff;
+     text-decoration: none;
+     display: block;
+     font-family: 'PT Sans', sans-serif;
+     font-size: 18px;
+   }
+   
+   #cssmenu>ul>li:hover {
+     background-color: #fff;
+   }
+   
+   #cssmenu ul ul li a,
+   #cssmenu ul ul li:hover>a,
+   #cssmenu ul ul li a:hover,
+   #cssmenu ul ul li.active>a,
+   #cssmenu>ul>li:hover>a {
+     color: #153e72;
+   }
+   
+   #cssmenu>ul>li.has-sub>a {
+     padding-right: 30px;
+   }
+   
+   #cssmenu>ul>li.has-sub>a:after {
+     position: absolute;
+     top: 22px;
+     right: 11px;
+     width: 8px;
+     height: 2px;
+     display: block;
+     /* font-family: 'Font Awesome 5 Free';
+     font-weight: 900;
+     content: "\f102"; */
+   }
+   
+   #cssmenu>ul>li.has-sub>a:before {
+     position: absolute;
+     top: 20px;
+     right: 14px;
+     display: block;
+     width: 9px;
+     height: 8px;
+     -webkit-transition: all .25s ease;
+     -moz-transition: all .25s ease;
+     -ms-transition: all .25s ease;
+     -o-transition: all .25s ease;
+     transition: all .25s ease;
+     font-family: 'Font Awesome 5 Free';
+     content: "\f103";
+     font-size: 14px;
+     font-weight: 700;
+   }
+   
+   #cssmenu>ul>li.has-sub:hover>a:before {
+     top: 23px;
+     height: 0;
+   }
+   
+   #cssmenu ul ul {
+     position: absolute;
+     left: -9999px;
+   }
+   
+   #cssmenu.align-right ul ul {
+     text-align: right;
+   }
+   
+   #cssmenu ul ul li {
+     height: 0;
+     -webkit-transition: all .25s ease;
+     -moz-transition: all .25s ease;
+     -ms-transition: all .25s ease;
+     -o-transition: all .25s ease;
+     transition: all .25s ease;
+   }
+   
+   #cssmenu li:hover>ul {
+     left: auto;
+     box-shadow: 0 0 10px rgba(50, 50, 50, 0.75);
+   }
+   
+   #cssmenu.align-right li:hover>ul {
+     left: auto;
+     right: 0;
+   }
+   
+   #cssmenu li:hover>ul>li {
+     height: 35px;
+   }
+   
+   #cssmenu ul ul ul {
+     margin-left: 100%;
+     top: 0;
+   }
+   
+   #cssmenu.align-right ul ul ul {
+     margin-left: 0;
+     margin-right: 100%;
+   }
+   
+   #cssmenu ul ul li a {
+     padding: 10px 0;
+     padding-left: 3px;
+     width: 255px;
+     font-size: 14px;
+     text-decoration: none;
+     font-weight: 400;
+   }
+   
+   #cssmenu ul ul li {
+     border-bottom: 1px solid rgba(92, 133, 178, 0.5);
+   }
+   
+   #cssmenu ul ul>li:last-child {
+     border-bottom: 0px;
+     margin-bottom: 10px;
+   }
+   
+   #cssmenu ul ul li:last-child>a,
+   #cssmenu ul ul li.last-item>a {
+     border-bottom: 0;
+   }
+   
+   #cssmenu ul ul li.has-sub>a:after {
+     position: absolute;
+     top: 16px;
+     right: 11px;
+     width: 8px;
+     height: 2px;
+     display: block;
+     background: #dddddd;
+     content: '';
+   }
+   
+   #cssmenu.align-right ul ul li.has-sub>a:after {
+     right: auto;
+     left: 11px;
+   }
+   
+   #cssmenu ul ul li.has-sub>a:before {
+     position: absolute;
+     top: 13px;
+     right: 14px;
+     display: block;
+     width: 2px;
+     height: 8px;
+     background: #dddddd;
+     content: '';
+     -webkit-transition: all .25s ease;
+     -moz-transition: all .25s ease;
+     -ms-transition: all .25s ease;
+     -o-transition: all .25s ease;
+     transition: all .25s ease;
+   }
+   
+   #cssmenu.align-right ul ul li.has-sub>a:before {
+     right: auto;
+     left: 14px;
+   }
+   
+   #cssmenu ul ul>li.has-sub:hover>a:before {
+     top: 17px;
+     height: 0;
+   }
+   
+   @media all and (max-width: 768px),
+   only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px),
+   only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px),
+   only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px),
+   only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px),
+   only screen and (min-resolution: 192dpi) and (max-width: 1024px),
+   only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+     #cssmenu {
+       width: 100%;
+       background-color: #1a3659;
+     }
+     #cssmenu ul {
+       width: 100%;
+       display: none;
+     }
+     #cssmenu ul ul li a,
+     #cssmenu ul ul li:hover>a,
+     #cssmenu ul ul li a:hover,
+     #cssmenu ul ul li.active>a,
+     #cssmenu>ul>li:hover>a {
+       color: #fff;
+     }
+     #cssmenu>ul>li>a {
+       padding: 10px;
+       font-size: 14px;
+     }
+     #cssmenu.align-center>ul {
+       text-align: left;
+     }
+     #cssmenu ul li {
+       width: 100%;
+     }
+     #cssmenu ul ul li {
+       border-bottom: 1px solid rgba(120, 120, 120, 0.2);
+     }
+     #cssmenu ul ul li,
+     #cssmenu li:hover>ul>li {
+       height: auto;
+     }
+     #cssmenu>ul>li:hover {
+       background-color: #153e72;
+     }
+     #cssmenu ul li ul {
+       background-color: #153e72;
+     }
+     #cssmenu ul li a,
+     #cssmenu ul ul li a {
+       width: 100%;
+       border-bottom: 0;
+     }
+     #cssmenu>ul>li {
+       float: none;
+       border-right: 1px solid transparent !important;
+       border-bottom: 1px solid #002147 !important;
+     }
+     #cssmenu ul ul li a {
+       padding-left: 0;
+     }
+     #cssmenu ul ul ul li a {
+       padding-left: 35px;
+     }
+     #cssmenu ul ul li a {
+       color: #dddddd;
+       background: none;
+     }
+     #cssmenu ul ul,
+     #cssmenu ul ul ul,
+     #cssmenu.align-right ul ul {
+       position: relative;
+       left: 0;
+       width: 100%;
+       margin: 0;
+       text-align: left;
+     }
+     #cssmenu>ul>li.has-sub>a:after,
+     #cssmenu>ul>li.has-sub>a:before,
+     #cssmenu ul ul>li.has-sub>a:after,
+     #cssmenu ul ul>li.has-sub>a:before {
+       display: none;
+     }
+     #cssmenu #menu-button {
+       display: block;
+       padding: 17px;
+       color: #dddddd;
+       cursor: pointer;
+       font-size: 12px;
+       text-transform: uppercase;
+       font-weight: 700;
+     }
+     #cssmenu #menu-button:after {
+       position: absolute;
+       top: 22px;
+       right: 17px;
+       display: block;
+       height: 4px;
+       width: 20px;
+       border-top: 2px solid #dddddd;
+       border-bottom: 2px solid #dddddd;
+       content: '';
+     }
+     #cssmenu #menu-button:before {
+       position: absolute;
+       top: 16px;
+       right: 17px;
+       display: block;
+       height: 2px;
+       width: 20px;
+       background: #dddddd;
+       content: '';
+     }
+     #cssmenu #menu-button.menu-opened:after {
+       top: 23px;
+       border: 0;
+       height: 2px;
+       width: 15px;
+       background: #ffffff;
+       -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+       -ms-transform: rotate(45deg);
+       -o-transform: rotate(45deg);
+       transform: rotate(45deg);
+     }
+     #cssmenu #menu-button.menu-opened:before {
+       top: 23px;
+       background: #ffffff;
+       width: 15px;
+       -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+       -ms-transform: rotate(-45deg);
+       -o-transform: rotate(-45deg);
+       transform: rotate(-45deg);
+     }
+     #cssmenu .submenu-button {
+       position: absolute;
+       z-index: 99999;
+       right: 0;
+       top: 0;
+       display: block;
+       border-left: 1px solid rgba(120, 120, 120, 0.2);
+       height: 46px;
+       width: 46px;
+       cursor: pointer;
+     }
+     #cssmenu .submenu-button.submenu-opened {
+       background: transparent;
+     }
+     #cssmenu ul ul .submenu-button {
+       height: 34px;
+       width: 34px;
+     }
+     #cssmenu .submenu-button:after {
+       position: absolute;
+       top: 22px;
+       right: 19px;
+       width: 8px;
+       height: 2px;
+       display: block;
+       background: #dddddd;
+       content: '';
+     }
+     #cssmenu ul ul .submenu-button:after {
+       top: 15px;
+       right: 13px;
+     }
+     #cssmenu .submenu-button.submenu-opened:after {
+       background: #ffffff;
+     }
+     #cssmenu .submenu-button:before {
+       position: absolute;
+       top: 19px;
+       right: 22px;
+       display: block;
+       width: 2px;
+       height: 8px;
+       background: #dddddd;
+       content: '';
+     }
+     #cssmenu ul ul .submenu-button:before {
+       top: 12px;
+       right: 16px;
+     }
+     #cssmenu .submenu-button.submenu-opened:before {
+       display: none;
+     }
+   }
+   
+   /* ==========================================================================
+                                     06. #Home Slider (jq slick slider)
+   ========================================================================== */
+   .slick-slide-items {
+     width: 100%;
+     margin: 0px auto;
+   }
+   
+   .slick-slide img {
+     width: 100%;
+     border: 0px solid #fff
+   }
 
-  
-      .SliderAciklama div span > a {
-          display: inline-block;
-          width: 80px;
-          padding: 5px 10px 5px 10px;
-          margin-left: 30px;
-          margin-right: -10px;
-          background-color: #8b0000;
-          position: relative;
-          text-decoration: none;
-          color: #fff;
-          text-align: center;
-      }
-
-          .SliderAciklama div span > a:after {
-              content: '';
-              position: absolute;
-              top: 0px;
-              left: 80px;
-              width: 0;
-              height: 0;
-              border: 16px solid transparent;
-              border-left: 12px solid #8b0000;
-          }
-
-          .SliderAciklama div span > a:before {
-              content: '';
-              position: absolute;
-              top: 0px;
-              left: 80px;
-              width: 0;
-              height: 0;
-              border: 15px solid transparent;
-              border-left: 12px solid #640101;
-          }
-
-  .SliderAciklama div:nth-child(1) span {
-      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
-      font-size: 15px;
-      background-color: rgba(0, 0, 0, 0.5);
-  }
-
-  .SliderAciklama div:nth-child(2) {
-      padding: 5px 10px;
-      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
-      font-size: 15px;
-      margin-top: 5px;
-      background-color: rgba(255, 255, 255, 0.7);
-      color: #000;
-      text-align: center;
-  }
-}
+ /* ---------------------- 06-1.00 #slick slider OVERRIDE  ---------------------------- */
 
 
-@media (max-width: 766px) {
-  /*slider açıklama*/
-      .SliderAciklama {
-      position: absolute;
-      margin: 0 5px;
-      top: 15%;
-      padding: 5px;
-      color: #fff;
-      z-index: 9999999;
-      font-size: 12px;
-  }
+   .slick-next,
+   .slick-prev {
+     position: absolute;
+     z-index: 9;
+   }
+   
+   .slick-prev {
+     left: 20px;
+   }
+   
+   .slick-next {
+     right: 20px;
+   }
+   
+   .slick-dots {
+     bottom: 25px;
+   }
+   
+   .slick-dotted.slick-slider {
+     margin: 0!important;
+   }
+   
+   .slick-prev:hover,
+   .slick-prev:focus,
+   .slick-next:hover,
+   .slick-next:focus,
+   .slick-prev,
+   .slick-next {
+     /* width: 100%; */
+     /* height: 100%; */
+     background: #000;
+     /* position: absolute; */
+     width: 50px;
+     height: 50px;
+     /* top: 0; */
+     /* left: 0; */
+     /* z-index: -1; */
+     opacity: 0.75;
+   }
+   
+ /* ---------------------- 06-2.00 #slide info (tıklama butonu)  ---------------------------- */
 
-  
-  .SliderAciklama div span {
-      margin: 10px 0px 10px 0px;
-      padding: 5px 5px;
-  }
+   .slide-info {
+     position: absolute;
+     margin: 0 0 0 55px;
+     top: 70%;
+     padding: 10px;
+     color: #fff;
+     z-index: 9999999;
+     font-size: 12px;
+   }
+   
+   .slide-info div span {
+     margin: 10px 0px 10px 0px;
+     padding: 10px 9px 10px 25px;
+   }
+   
+   .slide-info div span>a {
+     display: inline-block;
+     width: 100px;
+     padding: 10px 10px 10px 10px;
+     margin-left: 30px;
+     margin-right: -10px;
+     background-color: #ffc742;
+     position: relative;
+     text-decoration: none;
+     color: #fff;
+     text-align: center;
+   }
+   
+   .slide-info div span>a:hover {
+     color: #000;
+   }
+   
+   .slide-info div span>a:after {
+     content: '';
+     position: absolute;
+     top: 0px;
+     left: 100px;
+     width: 0;
+     height: 0;
+     border: 22px solid transparent;
+     border-left: 12px solid #ffc742;
+   }
+   
+   .slide-info div span>a:before {
+     content: '';
+     position: absolute;
+     top: 0px;
+     left: 101px;
+     width: 0;
+     height: 0;
+     border: 22px solid transparent;
+     border-left: 12px solid #ffc742;
+   }
+   
+   .slide-info div:nth-child(1) span {
+     font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+     font-size: 18px;
+     background-color: rgba(0, 0, 0, 0.5);
+   }
+   
+   .slide-info div:nth-child(2) {
+     padding: 10px 15px;
+     font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+     font-size: 18px;
+     margin-top: 3px;
+     background-color: rgba(255, 255, 255, 0.7);
+     color: #000;
+     text-align: center;
+   }
+   
+   @media (min-width: 768px) and (max-width: 991px) {
 
-  
-      .SliderAciklama div span > a {
-          display: inline-block;
-          width: 80px;
-          padding: 5px 10px 5px 10px;
-          margin-left: 30px;
-          margin-right: -10px;
-          background-color: #8b0000;
-          position: relative;
-          text-decoration: none;
-          color: #fff;
-          text-align: center;
-      }
+     .slide-info {
+       position: absolute;
+       margin: 0 5px;
+       top: 30%;
+       padding: 5px;
+       color: #fff;
+       z-index: 99;
+       font-size: 12px;
+     }
 
-          .SliderAciklama div span > a:after {
-              content: '';
-              position: absolute;
-              top: 0px;
-              left: 80px;
-              width: 0;
-              height: 0;
-              border: 14px solid transparent;
-              border-left: 12px solid #8b0000;
-          }
+     .slide-info div span {
+       margin: 10px 0px 10px 0px;
+       padding: 5px 5px;
+     }
 
-          .SliderAciklama div span > a:before {
-              content: '';
-              position: absolute;
-              top: 0px;
-              left: 80px;
-              width: 0;
-              height: 0;
-              border: 13px solid transparent;
-              border-left: 12px solid #640101;
-          }
+     .slide-info div span>a {
+       display: inline-block;
+       width: 80px;
+       padding: 5px 10px 5px 10px;
+       margin-left: 30px;
+       margin-right: -10px;
+       background-color: #8b0000;
+       position: relative;
+       text-decoration: none;
+       color: #fff;
+       text-align: center;
+     }
 
-  .SliderAciklama div:nth-child(1) span {
-      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
-      font-size: 11px;
-      background-color: rgba(0, 0, 0, 0.5);
-  }
+     .slide-info div span>a:after {
+       content: '';
+       position: absolute;
+       top: 0px;
+       left: 80px;
+       width: 0;
+       height: 0;
+       border: 16px solid transparent;
+       border-left: 12px solid #8b0000;
+     }
 
-  .SliderAciklama div:nth-child(2) {
-      padding: 5px 10px;
-      font-family: 'PTSansRegular', 'PT Sans', sans-serif;
-      font-size: 11px;
-      margin-top: 5px;
-      background-color: rgba(255, 255, 255, 0.7);
-      color: #000;
-      text-align: center;
-  }
-}
+     .slide-info div span>a:before {
+       content: '';
+       position: absolute;
+       top: 0px;
+       left: 80px;
+       width: 0;
+       height: 0;
+       border: 15px solid transparent;
+       border-left: 12px solid #640101;
+     }
 
+     .slide-info div:nth-child(1) span {
+       font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+       font-size: 15px;
+       background-color: rgba(0, 0, 0, 0.5);
+     }
 
+     .slide-info div:nth-child(2) {
+       padding: 5px 10px;
+       font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+       font-size: 15px;
+       margin-top: 5px;
+       background-color: rgba(255, 255, 255, 0.7);
+       color: #000;
+       text-align: center;
+     }
+   }
+   
+   @media (max-width: 766px) {
+     /*slider açıklama*/
+     .slide-info {
+       position: absolute;
+       margin: 0 5px;
+       top: 15%;
+       padding: 5px;
+       color: #fff;
+       z-index: 9999999;
+       font-size: 12px;
+     }
+
+     .slide-info div span {
+       margin: 10px 0px 10px 0px;
+       padding: 5px 5px;
+     }
+
+     .slide-info div span>a {
+       display: inline-block;
+       width: 80px;
+       padding: 5px 10px 5px 10px;
+       margin-left: 30px;
+       margin-right: -10px;
+       background-color: #8b0000;
+       position: relative;
+       text-decoration: none;
+       color: #fff;
+       text-align: center;
+     }
+
+     .slide-info div span>a:after {
+       content: '';
+       position: absolute;
+       top: 0px;
+       left: 80px;
+       width: 0;
+       height: 0;
+       border: 14px solid transparent;
+       border-left: 12px solid #8b0000;
+     }
+
+     .slide-info div span>a:before {
+       content: '';
+       position: absolute;
+       top: 0px;
+       left: 80px;
+       width: 0;
+       height: 0;
+       border: 13px solid transparent;
+       border-left: 12px solid #640101;
+     }
+
+     .slide-info div:nth-child(1) span {
+       font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+       font-size: 11px;
+       background-color: rgba(0, 0, 0, 0.5);
+     }
+
+     .slide-info div:nth-child(2) {
+       padding: 5px 10px;
+       font-family: 'PTSansRegular', 'PT Sans', sans-serif;
+       font-size: 11px;
+       margin-top: 5px;
+       background-color: rgba(255, 255, 255, 0.7);
+       color: #000;
+       text-align: center;
+     }
+   }

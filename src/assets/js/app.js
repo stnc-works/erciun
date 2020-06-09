@@ -90,28 +90,43 @@
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
+    lazyLoad: 'ondemand',
+    autoplay: true,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
+          lazyLoad: 'ondemand',
           infinite: true,
-          dots: true
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
         }
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2
+          slidesToScroll: 2,
+          lazyLoad: 'ondemand',
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
+       
         }
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          lazyLoad: 'ondemand',
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 4000,
         }
       }
       // You can unslick at a given breakpoint now by adding:
@@ -128,26 +143,3 @@
   })(jQuery);
 
 
-  var title = document.getElementsByTagName('title');
-
-var msg1 = "Domain.com";
-var msg2 = "New Message - Domain.com"
-var current;
-var titleChange;
-
-function changeTitle(){
-  if(current == msg1){
-   title = msg2;
-   current = msg2;
-  }else{ //If the current title isn't equal to the value of msg1
-   title = msg1;
-   current = msg1;
-  }
- titleChange = setTimeout("changeTitle()", 1000);
-}
-
-function stopChangingTitle(){
- clearTimeout(titleChange);
- title = msg1;
-}
-stopChangingTitle()
