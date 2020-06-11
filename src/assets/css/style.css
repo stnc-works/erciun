@@ -1103,24 +1103,27 @@
     text-align: center;
   }
 }
-.quickMenu {
- 
-  padding: 0px 35px;
-  background: #3498db;
+
+
+.quickMenu,
+ul.SliderBottomMenu > li {
+
+  background-color: #2a7bd2;
+
 }
    
 .quick-links {
   text-align: center;
-  float: left;
-  font-size: 10px;
-
-  min-width: 15%;
-  margin: 0 8px;
-  padding-bottom: 7px;
-  border-right: 1px dotted #FFF;
-}
-.quick-links:last-child {
-  border: none;
+  /* float: left; */
+  /* font-size: 10px; */
+  /* min-width: 15%; */
+  /* margin: 0 8px; */
+  padding-bottom: 28px;
+  /* border-right: 1px dotted #FFF; */
+  width: 100%;
+  background: #3498db;
+  height: 100%;
+  min-height: 112px;
 }
 
 
@@ -1145,7 +1148,7 @@
 .quick-links a:hover {
   transform: scale(1.15);
   text-decoration: none;
-  font-size: 13px;
+
 }
 
 .quick-links .fas,
@@ -1156,3 +1159,355 @@
   display: block;
 }
 
+
+
+.MenuClose {
+  display: none;
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  background-color: #ffc742;
+  z-index: 999999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.CloseIcon {
+  top: 35px;
+  right: 20px;
+  bottom: auto;
+  background-color: transparent;
+  border: 1px solid #fff7e3;
+
+}
+
+  .CloseIcon:hover {
+      background-color: #fef6e3 !important;
+      color: #000 !important;
+  }
+
+  .CloseIcon a {
+      padding: 2px 3px 4px 7px !important;
+  }
+
+  .CloseIcon:hover i {
+      color: #000 !important;
+  }
+
+.MenuClose:hover {
+  background-color: #ffd87d;
+}
+
+.MenuClose a {
+  display: block;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #000;
+  outline: 0;
+}
+
+.MenuClose i {
+  margin-right: 3px;
+}
+
+
+ul.SliderBottomMenu {
+  margin: 0;
+  padding: 0;
+}
+.quick-links,
+ul.SliderBottomMenu > li > ul,
+ul.SliderBottomMenu > li:first-child > ul{
+  border-right: 1px dashed #ffc742;
+}
+
+/* ul.SliderBottomMenu > li > ul:last-child,
+.quick-links:last-child,
+ul.SliderBottomMenu > li:last-child {
+  border-right: 0px solid transparent;
+} */
+
+.quickMenu .last .quick-links,
+.quickMenu .last > ul{
+  border-right: 0px solid transparent;
+}
+
+
+
+  ul.SliderBottomMenu > li {
+    list-style: none;
+    position: relative;
+    outline: 0;
+    float: left;
+    /* padding: 23px; */
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+  }
+
+ 
+
+
+
+
+      ul.SliderBottomMenu > li > ul {
+        clear: both;
+        padding: 12px 12px 0 12px;
+        height: auto;
+        min-height: 450px;
+        width: 190px;
+      }
+
+
+      ul.SliderBottomMenu > li:last-child > ul:last-child {
+          border-right: 0px solid transparent;
+      }
+
+
+
+      ul.SliderBottomMenu > li > ul > li {
+          list-style: none;
+          outline: 0;
+      }
+
+          ul.SliderBottomMenu > li > ul > li > a {
+            font-family: 'PT Sans Caption', sans-serif;
+            text-decoration: none;
+            color: #f8f9fa;
+            font-size: 12px;
+            display: block;
+            outline: 0;
+            display: block;
+            /* margin-bottom: 5px; */
+            padding-bottom: 4px;
+            position: relative;
+          }
+
+          /*ul.SliderBottomMenu > li > ul > li > a:before {
+                  content: "\f111";
+                  font-family: FontAwesome;
+                  font-style: normal;
+                  font-weight: normal;
+                  text-decoration: inherit;
+                  color: rgba(0, 0, 0, 0.2);
+                  font-size: 6px;
+                  margin-left: -7px;
+                  margin-top: 4px;
+                  position: absolute;
+                  left: 0;
+              }*/
+
+          ul.SliderBottomMenu > li > ul > li:hover > a:before {
+              color: #ffb200;
+          }
+
+          ul.SliderBottomMenu > li > ul > li > a:hover {
+              color: #232121;
+          }
+
+      ul.SliderBottomMenu > li:first-child > ul {
+          /* margin-left: 10px; */
+          /* padding-right: 5px; */
+      }
+
+          ul.SliderBottomMenu > li:first-child > ul > li {
+              margin-left: 0px;
+          }
+
+      ul.SliderBottomMenu > li:last-child > ul {
+          margin-right: 10px;
+      }
+
+      ul.SliderBottomMenu > li > ul > li > a > i {
+          width: 25px;
+          height: 25px;
+          line-height: 25px;
+          text-align: center;
+          vertical-align: middle;
+          color: #fff;
+          background-color: #ffb200;
+          margin-top: 2px;
+          -webkit-border-radius: 3px;
+          -moz-border-radius: 3px;
+          border-radius: 3px;
+          margin-right: 3px;
+      }
+
+      ul.SliderBottomMenu > li > ul > li:hover i {
+          color: #ffb200;
+          background-color: #fff;
+      }
+
+.SliderBottomMenuAltBorder {
+  display: none;
+}
+
+
+
+
+
+@media (min-width: 1200px) {
+  ul.SliderBottomMenu > li > ul {
+      display: none;
+  }
+
+
+  ul.SliderBottomMenuFullActive > li > ul {
+      display: block;
+  }
+
+  .SliderBottomMenuAltBorder {
+      -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.37);
+      -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.37);
+      box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.37);
+      display: block;
+      border-top: 5px solid #ffc742;
+      height: 0px;
+      margin: 0 10px;
+      margin-bottom: -10px;
+  }
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  ul.SliderBottomMenu > li > ul {
+      display: none;
+  }
+
+
+  ul.SliderBottomMenuFullActive > li > ul {
+      display: block;
+  }
+
+  .SliderBottomMenuAltBorder {
+      -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.37);
+      -moz-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.37);
+      box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.37);
+      display: block;
+      border-top: 5px solid #ffc742;
+      height: 10px;
+      margin: 0 10px;
+      margin-bottom: -10px;
+  }
+
+  .MenuClose {
+      display: none;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  ul.SliderBottomMenu > li > ul {
+      border-bottom: 0;
+  }
+
+  ul.SliderBottomMenu > li:first-child > ul {
+      margin-left: 0px;
+  }
+
+      ul.SliderBottomMenu > li:first-child > ul > li {
+          margin-left: 3px;
+      }
+
+  ul.SliderBottomMenu > li:last-child > ul {
+      margin-right: 0;
+  }
+
+  .MenuClose {
+      display: none;
+  }
+
+
+  ul.SliderBottomMenu > li > ul > li a {
+      padding: 6px 0;
+      font-size: 13px;
+  }
+
+  ul.SliderBottomMenu > li:first-child > ul {
+      margin-left: 0px;
+  }
+}
+
+@media (max-width: 766px) {
+
+  ul.SliderBottomMenu {
+      margin-top: 20px;
+  }
+
+      /* ul.SliderBottomMenu > li > a {
+          height: 35px;
+          padding-top: 10px !important;
+          border-bottom: 1px solid #fff;
+      }
+
+          ul.SliderBottomMenu > li > a > i:before {
+              content: "\f103";
+              font-family: FontAwesome;
+              font-style: normal;
+              font-weight: normal;
+              text-decoration: inherit;
+              color: #ffeab9;
+              font-size: 22px;
+              margin-top: -10px;
+              margin-right: 10px;
+              float: right;
+          } */
+
+
+      ul.SliderBottomMenu > li > ul {
+          display: none;
+      }
+
+      ul.SliderBottomMenu > li > ul {
+          height: auto !important;
+          padding-bottom: 15px;
+          border-bottom: 0px !important;
+      }
+
+          ul.SliderBottomMenu > li > ul > li a {
+              padding: 7px 0;
+              font-size: 13px;
+          }
+
+      ul.SliderBottomMenu > li:first-child > ul {
+          border-left: 0 !important;
+      }
+
+      ul.SliderBottomMenu > li:last-child > ul {
+          border-right: 0 !important;
+      }
+
+      ul.SliderBottomMenu > li:first-child > ul {
+          margin-left: 0px;
+      }
+
+  /*menu aktif*/
+
+  .SliderBottomMenuActive > a {
+      background-color: #976a00 !important;
+  }
+
+  li.SliderBottomMenuActive > a > i:before {
+      content: "\f102" !important;
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      color: #ffffff;
+      font-size: 22px;
+      margin-top: -10px;
+      margin-right: 10px;
+      float: right;
+  }
+
+  .SliderBottomMenuActive > ul {
+      display: block !important;
+  }
+
+  .MenuClose {
+      display: none;
+  }
+}
