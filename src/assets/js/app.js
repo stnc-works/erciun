@@ -78,12 +78,20 @@
   (function($){
   $(document).ready(function(){
   
+
+
+     /* ---------------------------------------------------------------------------
+     * css menu (main menu init)
+     * --------------------------------------------------------------------------- */
   $("#cssmenu").menumaker({
      title: "Menu",
      format: "multitoggle"
   });
   
 
+     /* ---------------------------------------------------------------------------
+     * Slick Slider init
+     * --------------------------------------------------------------------------- */
   $('.responsive').slick({
     dots: true,
     infinite: false,
@@ -136,6 +144,23 @@
   });
 
 
+     /* ---------------------------------------------------------------------------
+     * quick menu events 
+     * --------------------------------------------------------------------------- */
+
+    $('.quick-links a').on("click", function (e) {   
+      e.preventDefault();
+      $('ul.SliderBottomMenu > li > ul').addClass("active");
+      $('.MenuClose').show();
+});
+
+$('.MenuClose').on("click", function (e) {   
+      e.preventDefault();
+      $('ul.SliderBottomMenu > li > ul').removeClass("active");
+      $('.MenuClose').hide();
+    
+});
+
 
 
 
@@ -143,3 +168,11 @@
   })(jQuery);
 
 
+     /* ---------------------------------------------------------------------------
+     * sayfa tamamen yüklenince yapılacaklar  //https://javascript.info/onload-ondomcontentloaded
+     * --------------------------------------------------------------------------- */
+
+    window.onload = function() { 
+      //slider daki oku  alanı 
+      $('.slide-info').show();
+    };

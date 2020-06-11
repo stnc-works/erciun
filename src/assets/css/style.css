@@ -904,6 +904,7 @@
   color: #fff;
   z-index: 9999999;
   font-size: 12px;
+  display: none;
 }
 
 .slide-info div span {
@@ -1161,61 +1162,10 @@ ul.SliderBottomMenu > li {
 
 
 
-.MenuClose {
-  display: none;
-  position: absolute;
-  right: 20px;
-  bottom: 15px;
-  background-color: #ffc742;
-  z-index: 999999;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-}
-
-.CloseIcon {
-  top: 35px;
-  right: 20px;
-  bottom: auto;
-  background-color: transparent;
-  border: 1px solid #fff7e3;
-
-}
-
-  .CloseIcon:hover {
-      background-color: #fef6e3 !important;
-      color: #000 !important;
-  }
-
-  .CloseIcon a {
-      padding: 2px 3px 4px 7px !important;
-  }
-
-  .CloseIcon:hover i {
-      color: #000 !important;
-  }
-
-.MenuClose:hover {
-  background-color: #ffd87d;
-}
-
-.MenuClose a {
-  display: block;
-  padding: 4px 6px;
-  text-decoration: none;
-  font-weight: normal;
-  color: #000;
-  outline: 0;
-}
-
-.MenuClose i {
-  margin-right: 3px;
-}
-
-
 ul.SliderBottomMenu {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 .quick-links,
 ul.SliderBottomMenu > li > ul,
@@ -1256,10 +1206,13 @@ ul.SliderBottomMenu > li:last-child {
         clear: both;
         padding: 12px 12px 0 12px;
         height: auto;
-        min-height: 450px;
-        width: 190px;
+        min-height: 355px;
+        width: 100%;
+        display: none;
       }
-
+      ul.SliderBottomMenu > li > ul.active {
+        display: block;
+      }
 
       ul.SliderBottomMenu > li:last-child > ul:last-child {
           border-right: 0px solid transparent;
@@ -1354,9 +1307,6 @@ ul.SliderBottomMenu > li:last-child {
   }
 
 
-  ul.SliderBottomMenuFullActive > li > ul {
-      display: block;
-  }
 
   .SliderBottomMenuAltBorder {
       -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.37);
@@ -1376,7 +1326,7 @@ ul.SliderBottomMenu > li:last-child {
       display: none;
   }
 
-
+/*TODO: bu kısım kontrol et senin active olayına göre bak  */
   ul.SliderBottomMenuFullActive > li > ul {
       display: block;
   }
@@ -1399,6 +1349,11 @@ ul.SliderBottomMenu > li:last-child {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+
+
+  ul.SliderBottomMenu > li > ul{
+    min-height: 460px;
+  }
 
   ul.SliderBottomMenu > li > ul {
       border-bottom: 0;
@@ -1510,4 +1465,58 @@ ul.SliderBottomMenu > li:last-child {
   .MenuClose {
       display: none;
   }
+}
+
+.MenuClose {
+  display: none;
+  position: absolute;
+  right: 20px;
+  bottom: 15px;
+  background-color: #ffc742;
+  z-index: 999999;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+
+}
+
+.CloseIcon {
+  top: 3px;
+  right: 3px;
+  bottom: auto;
+  background-color: #007bff;
+  border: 1px solid #fff7e3;
+  width: 33px;
+  height: 29px;
+
+}
+
+  .CloseIcon:hover {
+      background-color: #fef6e3 !important;
+      color: #000 !important;
+  }
+
+  .CloseIcon a {
+      padding: 2px 3px 4px 7px !important;
+  }
+
+  .CloseIcon:hover i {
+      color: #000 !important;
+  }
+
+.MenuClose:hover {
+  background-color: #ffd87d;
+}
+
+.MenuClose a {
+  display: block;
+  padding: 4px 6px;
+  text-decoration: none;
+  font-weight: normal;
+  color: #000;
+  outline: 0;
+}
+
+.MenuClose i {
+  margin-right: 3px;
 }
