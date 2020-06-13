@@ -20,7 +20,6 @@
   05-2.00 #header logo 
   05-3.00 #header Main Menu 
 06. #Home Slider (jq slick slider)
-  06-1.00 #slick slider OVERRIDE
   06-2.00 #slide info (tıklama butonu)
 *****************************************************************/
 
@@ -841,59 +840,34 @@
    /* ==========================================================================
                                      06. #Home Slider (jq slick slider)
    ========================================================================== */
-.slick-slide-items {
-  width: 100%;
-  margin: 0px auto;
+   .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #000;
+
+  }
+  .swiper-slide img {
+
+    max-width: 100%;
+    max-height: 100%;
+
+  
+  }
+  .swiper-button-prev.swiper-button-white, 
+  .swiper-button-next.swiper-button-white {
+    background: rgba(0, 0, 0, 0.46);
+ width: 50px;
+ height: 50px;
+ opacity: 0.75;
 }
 
-.slick-slide img {
-  width: 100%;
-  border: 0px solid #fff;
-}
-
- /* ---------------------- 06-1.00 #slick slider OVERRIDE  ---------------------------- */
 
 
-.slick-next,
-   .slick-prev {
-  position: absolute;
-  z-index: 9;
-}
 
-.slick-prev {
-  left: 20px;
-}
-
-.slick-next {
-  right: 20px;
-}
-
-.slick-dots {
-  bottom: 25px;
-}
-
-.slick-dotted.slick-slider {
-  margin: 0!important;
-}
-
-.slick-prev:hover,
-   .slick-prev:focus,
-   .slick-next:hover,
-   .slick-next:focus,
-   .slick-prev,
-   .slick-next {
-     /* width: 100%; */
-     /* height: 100%; */
-  background: #000;
-     /* position: absolute; */
-  width: 50px;
-  height: 50px;
-     /* top: 0; */
-     /* left: 0; */
-     /* z-index: -1; */
-  opacity: 0.75;
-}
-   
  /* ---------------------- 06-2.00 #slide info (tıklama butonu)  ---------------------------- */
 
 .slide-info {
@@ -2088,3 +2062,6 @@ ul.TakvimListe {
           font-family: 'PT Sans Narrow', sans-serif;
           font-size: 140% !important;
       }
+
+
+
