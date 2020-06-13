@@ -2041,3 +2041,50 @@ ul.TakvimListe {
         background: -moz-linear-gradient(right,rgba(136,105,23,1),rgba(203,164,61,1)); /*Fx 3.6-15*/
         background: linear-gradient(to right, rgba(136,105,23,1), rgba(203,164,61,1)); /*Standard*/
     }
+
+
+    .FactsTable {
+      background-color: #fff7e3;
+      border-radius: 100px;
+      display: table;
+      position: absolute;
+      padding: 5px;
+  }
+
+
+.FactsTable {
+  background-color: #fff7e3;
+  border-radius: 100px;
+  display: table;
+  position: absolute;
+  padding: 5px;
+}
+.FactsTable a {
+  color: #000000;
+  text-decoration: none;
+  outline: 0;
+}
+.FactsTable:hover {
+  background-color: rgba(88, 89, 90,0.1);
+}
+
+.FactsTable:hover span a {
+  color: #fff;
+  display: block;
+}
+
+  .FactsTable > span {
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      padding: 5px;
+      line-height: 20px;
+      font-family: 'PT Sans Narrow', sans-serif;
+      font-size: 118% !important;
+  }
+
+      .FactsTable > span > m {
+          font-weight: 600;
+          font-family: 'PT Sans Narrow', sans-serif;
+          font-size: 140% !important;
+      }
