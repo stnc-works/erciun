@@ -161,9 +161,32 @@ $('.MenuClose').on("click", function (e) {
     
 });
 
+/*
 
+$(".DuyuruBlok").mCustomScrollbar({
+  snapAmount: 40,
+  scrollButtons: { enable: true },
+  keyboard: { scrollAmount: 40 },
+  mouseWheel: { deltaFactor: 40 },
+  scrollInertia: 400
+});
 
+$(".RektorBlok").mCustomScrollbar({
+  snapAmount: 40,
+  scrollButtons: { enable: true },
+  keyboard: { scrollAmount: 40 },
+  mouseWheel: { deltaFactor: 40 },
+  scrollInertia: 400
+});
 
+$(".BasariBlok").mCustomScrollbar({
+  snapAmount: 40,
+  scrollButtons: { enable: true },
+  keyboard: { scrollAmount: 40 },
+  mouseWheel: { deltaFactor: 40 },
+  scrollInertia: 400
+});
+*/
   });
   })(jQuery);
 
@@ -175,4 +198,6 @@ $('.MenuClose').on("click", function (e) {
     window.onload = function() { 
       //slider daki oku  alanı 
       $('.slide-info').show();
+
+
     };
