@@ -114,24 +114,26 @@
       e.preventDefault();
       $('ul.SliderBottomMenu > li > ul').addClass("active");
       $('.MenuClose').show();
-});
+    });
 
-$('.MenuClose').on("click", function (e) {   
+   $('.MenuClose').on("click", function (e) {   
       e.preventDefault();
       $('ul.SliderBottomMenu > li > ul').removeClass("active");
       $('.MenuClose').hide();
     
-});
+   });
 
 
-
-$(".myblock").mCustomScrollbar({
-  theme:"dark-thin",
-  scrollButtons: { enable: true },
-  keyboard: { scrollAmount: 40 },
-  mouseWheel: { deltaFactor: 40 },
-  scrollInertia: 800
-});
+     /* ---------------------------------------------------------------------------
+     * duyurular kısmındaki scrolllar 
+     * --------------------------------------------------------------------------- */
+    $(".myblock").mCustomScrollbar({
+      theme:"dark-thin",
+      scrollButtons: { enable: true },
+      keyboard: { scrollAmount: 40 },
+      mouseWheel: { deltaFactor: 40 },
+      scrollInertia: 800
+    });
 
 
 
