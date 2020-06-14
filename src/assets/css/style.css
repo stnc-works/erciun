@@ -306,7 +306,7 @@
  /* ---------------------- 05-2.00 #header logo   ---------------------------- */
 #homepage-logo {
   position: relative;
-  z-index: 1;
+  z-index: 5;
 }
 
  /* ---------------------- 05-3.00 #header Main Menu  ---------------------------- */
@@ -794,10 +794,32 @@
   height: 50px;
   opacity: 0.75;
 }
+.swiper-pagination-bullet {
+  width: 14px!important;
+  height: 14px!important;
+  opacity: 0.6!important;
+}
 
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
  /* ---------------------- 06-2.00 #slide info (tıklama butonu)  ---------------------------- */
 
 .slide-info {
@@ -1937,3 +1959,300 @@ ul.TakvimListe > li > a {
 
 
 
+
+.FooterColor {
+  background-color: #292e33;
+  color: #fff;
+  padding: 50px 0 10px 0;
+}
+
+
+.borderRightWhite {
+  border-right: 1px solid #f5f5f5;
+}
+
+ul.FooterMenu {
+  margin: 0 0 0 0;
+  padding: 0 30px 0 30px;
+  top: 0;
+  left: 0;
+  min-height: 190px;
+}
+
+
+  ul.FooterMenu > li {
+      list-style: none;
+  }
+
+      ul.FooterMenu > li > a {
+          color: #f5f5f5;
+          display: block;
+          text-decoration: none;
+          margin-bottom: 10px;
+      }
+
+      ul.FooterMenu > li > ul {
+          margin: 0;
+          padding: 0;
+          top: 0;
+          left: 0;
+      }
+
+          ul.FooterMenu > li > ul > li {
+              list-style: none;
+          }
+
+              ul.FooterMenu > li > ul > li > a {
+                  color: #f5f5f5;
+                  display: block;
+                  text-decoration: none;
+                  font-size: 11px;
+              }
+
+                  ul.FooterMenu > li > ul > li > a:hover {
+                      color: #dadada;
+                  }
+
+.VideoBottomBlok {
+  font-size: 11px;
+}
+
+  .VideoBottomBlok > div {
+      margin-bottom: 5px;
+  }
+
+  .VideoBottomBlok a {
+      font-family: 'PTSansBold', 'PT Sans', sans-serif;
+      font-size: 12px;
+      color: #ffc742;
+      text-decoration: none;
+  }
+
+      .VideoBottomBlok a > i {
+          margin-left: -1px;
+      }
+
+          .VideoBottomBlok a > i:nth-child(1) {
+              color: #ffc742;
+              margin-left: 4px;
+          }
+
+          .VideoBottomBlok a > i:nth-child(2) {
+              color: #cccccc;
+          }
+
+
+          .VideoBottomBlok a > i:nth-child(3) {
+              color: #3b7538;
+          }
+
+
+
+          .FooterSosyalBlok {
+            display: block;
+        }
+        
+        .FooterSosyal {
+            display: inline-block;
+            float: left;
+            width: 25px;
+            height: 25px;
+            position: relative;
+            margin: 0 5px 0 auto;
+        }
+        
+         .FooterSosyal > a {
+             display: block;
+             text-align: center;
+             margin: 0 auto;
+         }
+        
+            .FooterSosyal > a > i {
+                display:block;     
+               
+            }
+        
+                .FooterSosyal > a > i:before {
+                    font-family: FontAwesome;
+                    font-style: normal;
+                    font-weight: normal;
+                    text-decoration: inherit;
+                    /*--adjust as necessary--*/
+                    color: #777777;
+                    padding-right: 0.5em;
+                    position: absolute;
+                    left: 0;
+                    font-size: 20px;
+        
+                }
+        
+        
+        .FooterFacebook > a > i:before {
+            content: "\f082";
+        }
+        
+        .FooterFacebook:hover > a  > i:before    {
+            color: #314a87 !important;
+        
+        }
+        
+        .FooterTwitter > a > i:before {
+            content: "\f081";
+        }
+        
+        
+        .FooterTwitter:hover > a  > i:before    {
+            color: #01bbf6 !important;
+        
+        }
+        
+        .FooterGoogle > a > i:before {
+            content: "\f0d4";
+        }
+        
+        .FooterGoogle:hover > a  > i:before    {
+            color: #d13e2f !important;
+        
+        }
+        
+        
+        
+        .FooterLinkedin > a > i:before {
+            content:  "\f0e1";
+        }
+        
+        .FooterLinkedin:hover > a  > i:before    {
+            color: #006dc0 !important;
+        
+        }
+        
+        .FooterYoutube > a > i:before {
+            content:  "\f167";
+        }
+        
+        .FooterYoutube:hover > a  > i:before    {
+            color: #d72a25 !important;
+        
+        }
+        
+        
+        .FooterAndroid > a > i:before {
+            content:   "\f17b";
+        }
+        
+        .FooterAndroid:hover > a  > i:before    {
+            color: #51a41b !important;
+        
+        }
+        
+        
+        .Footerios > a > i:before {
+            content: "\f179";
+        }
+        
+        .Footerios:hover > a  > i:before    {
+            color: #fff !important;
+        
+        }
+
+
+        .HizliMenu {
+          display: table;
+          position: fixed;
+          right: 0;
+          top: 160px;
+          
+      }
+      
+      .HizliMenu ul {
+          margin: 0 -205px 0 0;
+          padding: 0;
+          top: 0;
+          left: 0;
+      }
+      
+      .HizliMenu ul li {
+          list-style: none;
+          display: table;
+          width: 240px;
+          margin-bottom: 3px;
+          background-color: #ffc742;
+          height: 30px;
+          line-height: 30px;
+      }
+      
+      .HizliMenu ul li:hover {
+          background-color: #58595a;
+          margin-left: -160px;
+          transition: background 0.6s ease-in-out 0s, border-radius 0.6s ease 0s, color 0.6s linear 0s, margin-left 0.6s ease 0s;
+      }
+      
+      .HizliMenu ul li:hover a {
+          color: #fff;
+           transition: background 0.6s ease-in-out 0s, border-radius 0.6s ease 0s, color 0.3s linear 0s, margin-left 0.6s ease 0s;
+      }
+      
+      .HizliMenu ul li  a {
+          display:table;
+          width: 100%;
+          text-decoration: none;
+          color: rgba(0, 33, 71, 0.7);
+          outline: 0;
+          
+      }
+      
+      .HizliMenu ul li  a i {
+          display: block;
+          width: 35px;
+          height: 30px;
+          text-align: center;
+          border-right: 1px solid #fff;
+          float: left;
+          font-size: 18px;
+          padding-top: 7px;
+          
+      }
+      
+      .HizliMenu ul li  a span {
+          display: block;
+          float: left;
+          margin-left: 15px;
+          font-family: 'PT Sans Narrow', sans-serif;
+          font-size: 14px;
+          font-weight: 500;
+      }
+      
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          .HizliMenu ul li  a i {
+            border-right: 1px solid transparent;  
+          }
+      
+      .HizliMenu ul {
+          margin: 0 -190px 0 0;
+          padding: 0;
+          top: 0;
+          left: 0;
+      }
+      }
+
+
+
+
+.PageTop {
+  display: none;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #01336f;
+  color: #fff;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.PageTop i {
+  display: block;
+  padding: 10px 15px 0 15px;
+  font-size: 35px;
+}
