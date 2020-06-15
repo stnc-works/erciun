@@ -1594,7 +1594,7 @@ ul.Duyurular > li > a {
   padding-bottom: 2px;
   position: relative;
   display: block;
-  line-height: 18px;
+
   color: #004087;
           /*overflow: hidden;
           height: 20px;*/
@@ -1651,15 +1651,16 @@ ul.Duyurular > li > a:hover {
 }
 
 .EtkinlikBlokAna > div:first-child {
-  display: inline-block;
+  display: block;
   float: left;
   height: 60px;
+      padding-right: 20px;
 }
 
 .EtkinlikBlokAna > div:first-child > div:first-child {
   display: block;
   float: left;
-  width: 29px;
+  width: 42px;
   text-align: center;
   color: #003d84;
   font-size: 36px;
