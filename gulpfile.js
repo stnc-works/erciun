@@ -46,9 +46,9 @@ gulp.task('js', () => {
     'bower_components/bootstrap/dist/js/bootstrap.js', // if you need bootstrap, use "npm i -g bower" and "bower install bootstrap"
     src_assets_folder + 'js/**/*.js'
   ]
-  /*,  since: gulp.lastRun('js') }*/
+    /*,  since: gulp.lastRun('js') }*/
   )
-  .pipe(sourcemaps.init())
+    .pipe(sourcemaps.init())
 
     .pipe(plumber())
     // .pipe(webpack({
@@ -58,11 +58,11 @@ gulp.task('js', () => {
     // .pipe(babel({
     //   presets: ['@babel/env']
     // }))
-   
+
 
     .pipe(concat('app.js'))
     .pipe(uglify())
-    .pipe(rename({suffix: '.min'})) // renaming file to myproject.min.js
+    .pipe(rename({ suffix: '.min' })) // renaming file to myproject.min.js
 
     .pipe(gulp.dest(dist_assets_folder + 'js'))
     .pipe(browserSync.stream());
@@ -70,10 +70,10 @@ gulp.task('js', () => {
 
 
 // Fonts
-gulp.task('font-awesome', function() {
+gulp.task('font-awesome', function () {
   return gulp.src([
-                  'bower_components/components-font-awesome/webfonts/*',])
-          .pipe(gulp.dest(dist_assets_folder +'webfonts'));
+    'bower_components/components-font-awesome/webfonts/*',])
+    .pipe(gulp.dest(dist_assets_folder + 'webfonts'));
 });
 
 
@@ -88,9 +88,9 @@ gulp.task('minify-css', () => {
     src_assets_folder + 'css/**/*.css'
   ])
 
-  .pipe(concat('style.css'))
-  //   .pipe(minifyCss({keepBreaks:false})) // minifying file
-     .pipe(rename({suffix: '.min'})) // renaming file to myproject.min.css
+    .pipe(concat('style.css'))
+    //   .pipe(minifyCss({keepBreaks:false})) // minifying file
+    .pipe(rename({ suffix: '.min' })) // renaming file to myproject.min.css
 
 
 
@@ -107,10 +107,10 @@ gulp.task('images', () => {
 });
 
 // Fonts
-gulp.task('fonts', function() {
+gulp.task('fonts', function () {
   return gulp.src([
-          src_assets_folder+'fonts/*',])
-          .pipe(gulp.dest(dist_assets_folder +'fonts'));
+    src_assets_folder + 'fonts/*',])
+    .pipe(gulp.dest(dist_assets_folder + 'fonts'));
 });
 
 
@@ -131,7 +131,7 @@ gulp.task('vendor', () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task('build', gulp.series('clear', 'html', 'js', 'minify-css', 'images', 'vendor', 'font-awesome','fonts'));
+gulp.task('build', gulp.series('clear', 'html', 'js', 'minify-css', 'images', 'vendor', 'font-awesome', 'fonts'));
 
 gulp.task('dev', gulp.series('html', 'minify-css', 'js'));
 
