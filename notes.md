@@ -1,4 +1,7 @@
-❯ bower install components-font-awesome --save
+ npm install -g bower
+ npm install -g gulp-cli
+ bower install components-font-awesome --save
+
 
 https://gist.github.com/edouard-lopez/e99b70af8d4b4463b797
 
