@@ -1554,7 +1554,7 @@ span.TumLink a {
     } */;
 }
 
-ul.Duyurular {
+ul.adverts {
   margin: 0;
   padding: 0;
   top: 0;
@@ -1577,18 +1577,18 @@ ul.Duyurular {
   margin-bottom: 10px;
 }
 
-ul.Duyurular > li {
+ul.adverts > li {
   list-style: none;
   margin-bottom: 2px;
   border-bottom: 1px solid rgba(0, 64, 135, 0.2);
   display: none;
 }
 
-ul.Duyurular > li:hover {
+ul.adverts > li:hover {
   background-color: #fff7e3;
 }
 
-ul.Duyurular > li > a {
+ul.adverts > li > a {
   padding-left: 5px;
   padding-top: 2px;
   padding-bottom: 2px;
@@ -1604,11 +1604,11 @@ ul.Duyurular > li > a {
   outline: 0;
 }
 
-ul.Duyurular > li > a:hover {
+ul.adverts > li > a:hover {
   text-decoration: none;
 }
 
-.TumDuyuru {
+.all-advert {
   display: block;
   text-align: right;
   font-size: 11px;
@@ -1621,7 +1621,7 @@ ul.Duyurular > li > a:hover {
   right: 10px;
 }
 
-.TumDuyuru a {
+.all-advert a {
   position: relative;
   padding-right: 13px;
   font-family: 'PT Sans Narrow', sans-serif;
@@ -1629,7 +1629,7 @@ ul.Duyurular > li > a:hover {
   color: #193858;
 }
 
-.TumDuyuru a:before {
+.all-advert a:before {
   content: "\f101";
   font-family: FontAwesome;
   font-style: normal;
@@ -1643,21 +1643,21 @@ ul.Duyurular > li > a:hover {
   text-decoration: none;
 }
 
-.EtkinlikBlokAna {
+.events-blocks {
   display: table;
   width: 100%;
   padding-bottom: 1px;
   border-bottom: 1px solid rgba(0, 75, 162, 0.2);
 }
 
-.EtkinlikBlokAna > div:first-child {
+.events-blocks > div:first-child {
   display: block;
   float: left;
   height: 60px;
       padding-right: 20px;
 }
 
-.EtkinlikBlokAna > div:first-child > div:first-child {
+.events-blocks > div:first-child > div:first-child {
   display: block;
   float: left;
   width: 42px;
@@ -1670,20 +1670,20 @@ ul.Duyurular > li > a:hover {
   margin-right: 8px;
 }
 
-.EtkinlikBlokAna > div:first-child > div:last-child {
+.events-blocks > div:first-child > div:last-child {
   display: block;
   float: left;
   width: 55px;
 }
 
-.EtkinlikBlokAna > div:first-child > div:last-child span {
+.events-blocks > div:first-child > div:last-child span {
   display: block;
   text-align: left;
   padding: 0;
   margin: 0;
 }
 
-.EtkinlikBlokAna > div:first-child > div:last-child span:first-child {
+.events-blocks > div:first-child > div:last-child span:first-child {
   color: #003d84;
   font-size: 14px;
   font-family: 'PT Sans Narrow', sans-serif;
@@ -1691,7 +1691,7 @@ ul.Duyurular > li > a:hover {
   text-transform: uppercase;
 }
 
-.EtkinlikBlokAna > div:first-child > div:last-child span:last-child {
+.events-blocks > div:first-child > div:last-child span:last-child {
   color: #003d84;
   font-size: 11px;
   font-family: 'PT Sans Narrow', Arial, sans-serif;
@@ -1699,15 +1699,15 @@ ul.Duyurular > li > a:hover {
   text-transform: uppercase;
 }
 
-.EtkinlikBlokAna > div:last-child > div:first-child {
+.events-blocks > div:last-child > div:first-child {
   margin-top: 5px;
 }
 
-.EtkinlikBlokAna > div:last-child > div {
+.events-blocks > div:last-child > div {
   display: table;
 }
 
-.EtkinlikBlokAna > div:last-child > div:first-child a {
+.events-blocks > div:last-child > div:first-child a {
   display: block;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 15px;
@@ -1715,7 +1715,7 @@ ul.Duyurular > li > a:hover {
   line-height: 16px;
 }
 
-.EtkinlikBlokAna > div:last-child > div:last-child {
+.events-blocks > div:last-child > div:last-child {
   display: table;
   font-family: 'PT Sans', sans-serif;
   font-size: 12px;
@@ -1845,7 +1845,7 @@ ul.TakvimListe > li > a {
   padding: 5px 10px;
 }
 
-.ColorYesil {
+.color-green {
   background: -webkit-linear-gradient(left,rgba(27,88,25,1),rgba(74,130,71,1));
  /*Safari 5.1-6*/
   background: -o-linear-gradient(right,rgba(27,88,25,1),rgba(74,130,71,1));
@@ -1856,12 +1856,12 @@ ul.TakvimListe > li > a {
  /*Standard*/;
 }
 
-.ColorYesil > div,
+.color-green > div,
    .container-green .myblock {
   border-bottom: 7px solid #437c40;
 }
 
-.ColorMavi {
+.color-blue {
   background: -webkit-linear-gradient(left,rgba(25,56,88,1),rgba(22, 81, 178,1));
  /*Safari 5.1-6*/
   background: -o-linear-gradient(right,rgba(25,56,88,1),rgba(22, 81, 178,1));
@@ -1872,7 +1872,7 @@ ul.TakvimListe > li > a {
  /*Standard*/;
 }
 
-.ColorSari2 {
+.color-yellow {
   background: -webkit-linear-gradient(left,rgba(136,105,23,1),rgba(203,164,61,1));
  /*Safari 5.1-6*/
   background: -o-linear-gradient(right,rgba(136,105,23,1),rgba(203,164,61,1));
@@ -1883,20 +1883,20 @@ ul.TakvimListe > li > a {
  /*Standard*/;
 }
 
-.ColorSari2 > div,
+.color-yellow > div,
     .container-yellow .myblock {
   border-bottom: 7px solid #886917;
 }
 
-.ColorYesil > div,
-    .ColorMavi > div,
-        .ColorSari2 > div {
+.color-green > div,
+    .color-blue > div,
+        .color-yellow > div {
   padding: 8px 10px 5px 10px;
   line-height: 18px;
   font-size: 14px;
 }
 
-.ColorMavi > div,
+.color-blue > div,
     .container-blue .myblock {
   border-bottom: 10px solid #193858;
 }
@@ -2049,7 +2049,7 @@ ul.FooterMenu {
 
 
 
-          .FooterSosyalBlok {
+          .footer-social-block {
             display: block;
         }
         
@@ -2157,7 +2157,7 @@ ul.FooterMenu {
         }
 
 
-        .HizliMenu {
+        .speed-menu-arrow-up {
           display: table;
           position: fixed;
           right: 0;
@@ -2165,14 +2165,14 @@ ul.FooterMenu {
           
       }
       
-      .HizliMenu ul {
+      .speed-menu-arrow-up ul {
           margin: 0 -205px 0 0;
           padding: 0;
           top: 0;
           left: 0;
       }
       
-      .HizliMenu ul li {
+      .speed-menu-arrow-up ul li {
           list-style: none;
           display: table;
           width: 240px;
@@ -2182,18 +2182,18 @@ ul.FooterMenu {
           line-height: 30px;
       }
       
-      .HizliMenu ul li:hover {
+      .speed-menu-arrow-up ul li:hover {
           background-color: #58595a;
           margin-left: -160px;
           transition: background 0.6s ease-in-out 0s, border-radius 0.6s ease 0s, color 0.6s linear 0s, margin-left 0.6s ease 0s;
       }
       
-      .HizliMenu ul li:hover a {
+      .speed-menu-arrow-up ul li:hover a {
           color: #fff;
            transition: background 0.6s ease-in-out 0s, border-radius 0.6s ease 0s, color 0.3s linear 0s, margin-left 0.6s ease 0s;
       }
       
-      .HizliMenu ul li  a {
+      .speed-menu-arrow-up ul li  a {
           display:table;
           width: 100%;
           text-decoration: none;
@@ -2202,7 +2202,7 @@ ul.FooterMenu {
           
       }
       
-      .HizliMenu ul li  a i {
+      .speed-menu-arrow-up ul li  a i {
           display: block;
           width: 35px;
           height: 30px;
@@ -2214,7 +2214,7 @@ ul.FooterMenu {
           
       }
       
-      .HizliMenu ul li  a span {
+      .speed-menu-arrow-up ul li  a span {
           display: block;
           float: left;
           margin-left: 15px;
@@ -2224,11 +2224,11 @@ ul.FooterMenu {
       }
       
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          .HizliMenu ul li  a i {
+          .speed-menu-arrow-up ul li  a i {
             border-right: 1px solid transparent;  
           }
       
-      .HizliMenu ul {
+      .speed-menu-arrow-up ul {
           margin: 0 -190px 0 0;
           padding: 0;
           top: 0;

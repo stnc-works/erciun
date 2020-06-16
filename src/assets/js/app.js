@@ -164,7 +164,7 @@
     window.onload = function() { 
       //slider daki oku  alanı 
       $('.slide-info').show();
-      $('ul.Duyurular > li').show();
+      $('ul.adverts > li').show();
 
 
     };
